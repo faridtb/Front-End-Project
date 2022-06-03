@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Spline+Sans+Mono:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a{
+  text-decoration: none;
 }
 
 .heading{
@@ -80,3 +85,116 @@
   .dropdown:hover .dropdown-content {display: block;}
 
   .dropbtn:hover{color:#00c8ff;}
+
+
+  #location{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:50px ;
+    width: 180px;
+    height: 60px;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 0px 4px 8px 0px rgba(143, 143, 143, 0.2);
+  }
+  #location span i{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-size: 10px;
+  }
+
+  #location .currentLoc{
+    color: #233a95;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+#location:hover{
+  box-shadow: 0px 4px 8px 0px rgba(57, 57, 57, 0.2);
+}
+.search #navbarSearch{
+  position: relative;
+  padding: 18px 10px;
+  width: 553px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f4f7;
+}
+.search{
+position: relative;
+}
+.search .zoom{
+position: absolute;
+top: 18px;
+right: 20px;
+font-size: 25px;
+color: rgb(49, 49, 49);
+}
+
+.myAccount{
+  display: flex;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.count{
+  position: relative;
+  display: flex;
+  left: -45px;
+}
+
+.count .dollar{
+  position: relative;
+  top: 12px;
+  left: -15px;
+  font-family:"Dosis",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.basketPop{
+  position: absolute;
+  width: 250px;
+  max-width: 350px;
+  max-height: 600px;
+  min-height: 250px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px 0px rgba(57, 57, 57, 0.2);
+  border-radius: 15px;
+  top: 65px;
+  left: -160px;
+  transition: 1s;
+  display: none;
+
+}
+
+.count:hover .basketPop{  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;}
+
+.basketLogo:hover .basketPop{  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.basketLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  margin-left: 10px;  
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgb(250, 226, 226);
+}

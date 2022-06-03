@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div class="top"> 
     <div class="heading">
         Due to the COVID 19 epidemic, orders may be processed with a slight delay
     </div>
@@ -47,14 +48,77 @@
               <div class="dropdown"style="padding-right:15px;padding-top:10px;">
                 <button class="dropbtn">USD<i class="fa-solid fa-chevron-down" style="font-size:10px;padding-left:5px;"></i></button>
                 <div class="dropdown-content">
-                  <a href="#" style="margin-top:15px;">English</a>
-                  <a href="#">Spanish</a>
-                  <a href="#">German</a>
+                  <a href="#" style="margin-top:15px;">USD</a>
+                  <a href="#">INR</a>
+                  <a href="#">GPB</a>
               </div>      
           </div>
             </div>
           </div>
+     </div>
+  </div>
+  </div>
+  <div class="nav-container"style="padding-top:30px;">
+    <div class="container">
+      <div class="row">
+        <div class="col"style="padding-left:45px;">
+          <a href=""><img src="../Img/bacola-logo.png" style="width:164px;height:43.8px;padding-left:5px ;" alt="">
+          <span class="brand-description" style="font-size:11px;color:#afb0b6;font-family:sans-serif;">Online Grocery Shopping Center</span></a>
+        </div>
+        <div class="col">
+          <!-- Button trigger modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"id="location">
+          <span class="location"style="font-size:10px;color:#afb0b6;">Your Location</span>
+          <div class="currentLoc">Select a Location</div>
+          <span><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+          <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Choose your Delivery Location</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
+      </div>
+        </div>
+        <div class="col">
+          <div class="search">
+            <input type="text"id="navbarSearch"placeholder="Searh for products...">
+            <i class="fa-solid fa-magnifying-glass zoom"></i>
+          </div>
+        </div>
+        <div class="col">
+          <a href=""style="color:gray"><div class="myAccount"><i class="fa-solid fa-user"></i></div></a> 
+        </div>
+        <div class="col">
+          <div class="count">
+           <a href=""style="color:black"><span class="dollar">$<span class="amount">0.00</span></span></a>
+           <div class="basketPop">
+             <img src="../Img/empty-removebg-preview.png"style="width:125px;height:100px;" alt="" srcset="">
+             <span class="basketContent" style="font-size:14px;font-weight:600;">No product in the cart</span>
+             <span class="sale" style="font-size:12px; padding-top:45px;"><hr> We reduce shipping prices to only 2.49$</span>
+           </div> 
+            <a href=""class="basketLogo" style="color:rgb(235, 52, 52);"><i class="fa-solid fa-basket-shopping"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
 </body>
 <script src="../Js/home.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
