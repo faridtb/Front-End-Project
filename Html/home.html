@@ -76,12 +76,34 @@
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
+
       <div class="modal-header">
-        <h6 class="modal-title" id="exampleModalLabel">Choose your Delivery Location</h6>
+        <div class="modal-title" id="exampleModalLabel">Choose your Delivery Location</div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <span style="font-size:13px;">Enter you adress and we will specify the offer your area.</span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="searchModal">
+                  <input type="text"id="modalSearch"placeholder="Searh your area">
+                  <i class="fa-solid fa-magnifying-glass zoom"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <ul style="list-style: none;">
+          <li class="d-flex justify-content-around">
+            <a href="" class="modalList">Select a Location</a>
+            <div class="prices" style="width:80px;height: 15px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);"><a href=""></a></div>
+            <hr></li>
+ 
+        </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -108,8 +130,10 @@
              <span class="basketContent" style="font-size:14px;font-weight:600;">No product in the cart</span>
              <span class="sale" style="font-size:12px; padding-top:45px;"><hr> We reduce shipping prices to only 2.49$</span>
            </div> 
-            <a href=""class="basketLogo" style="color:rgb(235, 52, 52);"><i class="fa-solid fa-basket-shopping"></i></a>
-
+            <a href=""class="basketLogo" style="color:rgb(235, 52, 52);">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <div class="counter">0</div>
+            </a>
           </div>
         </div>
       </div>
