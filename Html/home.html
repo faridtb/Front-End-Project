@@ -7,6 +7,8 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +22,7 @@
     <div class="heading">
         Due to the COVID 19 epidemic, orders may be processed with a slight delay
     </div>
-    <div class="thenHeading">
+    <div class="thenHeading"style="background-color:white;">
         <div class="container">
             <div class="row">
               <div class="col-4 d-flex justify-content-start">
@@ -39,7 +41,7 @@
                 <div class="text-content" style="color:rgb(41, 41, 41) ;padding-top:10px; height: 25px;"><span class="border-start"style="padding-left:20px" >Need help? Call Us: </span> <a style="text-decoration:none;" href="#"><strong style="color: #2bbef9">+ 994 568</strong></a></div>
                 <div class="dropdown border-start"style="padding-left:10px;padding-top:10px; height:44px;">
                     <button class="dropbtn">English<i class="fa-solid fa-chevron-down" style="font-size:10px;padding-left:5px;"></i></button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content lang"style="margin-top:15px;">
                       <a href="#" style="margin-top:15px;">English</a>
                       <a href="#">Spanish</a>
                       <a href="#">German</a>
@@ -47,7 +49,7 @@
               </div>
               <div class="dropdown"style="padding-right:15px;padding-top:10px;">
                 <button class="dropbtn">USD<i class="fa-solid fa-chevron-down" style="font-size:10px;padding-left:5px;"></i></button>
-                <div class="dropdown-content">
+                <div class="dropdown-content lang"style="margin-top:15px;">
                   <a href="#" style="margin-top:15px;">USD</a>
                   <a href="#">INR</a>
                   <a href="#">GPB</a>
@@ -58,7 +60,7 @@
      </div>
   </div>
   </div>
-  <div class="nav-container"style="padding-top:30px;">
+  <div class="nav-container"style="padding:30px 30px 0px 30px;background-color:white;box-shadow: 0px 0.5px 1px 0px rgba(0,0,0,0.2);">
     <div class="container">
       <div class="row">
         <div class="col"style="padding-left:45px;">
@@ -142,15 +144,10 @@
             <a href="" class="modalList" style="color: black;">Sumqayit</a>
             <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $115</div></a>
           </li>
-
-          
-          
- 
+          <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:20px 0px;position: relative;">
+        
+          </li>
         </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -178,6 +175,69 @@
               <div class="counter">0</div>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"style="padding-top:30px; background-color:white;">
+      <div class="row">
+        <div class="col">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle categor" style="border:none;background-color:#2bbef9 ;border-radius:25px;width: 214px;height: 50px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="totalProduct"><span>TOTAL 63 PRODUCTS</span></div>
+              <i class="fa-solid fa-bars"style="padding:10px;"><span style="padding:10px ;">ALL CATEGORIES</span></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="navMenu d-flex"style="padding-top:15px;">
+            <li>
+              <div class="dropdown">
+              <button class="dropbtn home"style="width:100px;height:40px;border-radius:25px;"><span style="height: 100px;">HOME</span><i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
+              <div class="dropdown-content home"style="width:200px;flex-direction:column;height:200px;margin-top:18px;">
+                <a href="#" style="margin-top:10px;">Home 1</a>
+                <a href="#">Home 2</a>
+                <a href="#">Home 3</a>
+                <a href="#">Home 4</a>
+                <a href="#">Home 5</a>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown"style="">
+            <button class="dropbtn home"style="width:100px;height: 40px;border-radius:25px;">SHOP<i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
+            <div class="dropdown-content home"style="width:1500px;flex-direction:column;height:300px;position: absolute;left:-560px;margin-top:20px;">
+              <a href="#" style="margin-top:10px;">Home 1</a>
+              <a href="#">Home 2</a>
+              <a href="#">Home 3</a>
+              <a href="#">Home 4</a>
+              <a href="#">Home 5</a>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown"style="">
+          <button class="dropbtn home"style="width:175px;height: 40px;border-radius:25px;"><i class="fa-solid fa-burger"style="margin-right:5px;font-size:18px;"></i>MEATS & SEAFOOD</button>
+        </li>
+      <li>
+        <div class="dropdown"style="">
+        <button class="dropbtn home"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-cookie"style="margin-right:5px;font-size:20px;"></i>BAKERY</button>
+      </li>
+    <li>
+      <div class="dropdown"style="">
+      <button class="dropbtn home"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-mug-hot"style="margin-right:5px;font-size:20px;"></i>BEVERAGES</button>
+    </li>
+  <li>
+    <div class="dropdown"style="">
+    <button class="dropbtn home"style="width:100px;height: 40px;border-radius:25px;">BLOG</button>
+  </li>
+  <li>
+  <div class="dropdown"style="">
+  <button class="dropbtn home"style="width:100px;height: 40px;border-radius:25px;">CONTACT</button>
+  </li>
+    </ul>
         </div>
       </div>
     </div>
