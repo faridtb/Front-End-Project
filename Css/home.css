@@ -238,6 +238,11 @@ flex-direction: column;}
   font-weight: 600;
 }
 
+
+.modal-body{
+  width: 420px;
+  overflow-y: scroll;
+}
 .modal-header{
   display: flex;
   flex-direction: column;
@@ -248,13 +253,9 @@ flex-direction: column;}
   position: relative;
   font-size: 17px;
   font-weight: 600;
-  left: -105px;
+  left: -65px;
   margin: 15px;
 }
 .modal-header .container{
   position: relative;
-}
-.modal-body a{
-  color: black;
-  margin: 5px 0px;
 }
