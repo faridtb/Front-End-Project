@@ -449,6 +449,14 @@ transition: 0.4s;
   height: 797px;
   padding: 0px 15px;
 }
+.dealsWeek .miniProducts .row .col .productInfos .category a{
+  color:#2c2c2c;
+
+}
+.dealsWeek .miniProducts .row .col .productInfos .category a:hover{
+  transition: 0.5s;
+  color: rgb(50, 2, 206);
+}
 
 .dealsWeek .miniProducts .row{
   padding:0px 20px;
@@ -461,6 +469,12 @@ transition: 0.4s;
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  padding: 0px 20px;
+  position: relative;
+}
+.dealsWeek .miniProducts .row .col a img{
+  width: 180px;
+  height: 187px;
 }
 
 
@@ -480,4 +494,37 @@ transition: 0.4s;
 #countdown .points{
   padding-top: 10px;
   font-weight: 600;
+}
+
+.excSale{
+  width: 43px;
+  height: 25px;
+  background-color: #00c8ff;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "dosis",sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.recommend{
+  width: 90px;
+  height: 25px;
+  background-color: #a0a0a0;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "dosis",sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
 }
