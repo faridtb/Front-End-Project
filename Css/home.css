@@ -126,6 +126,7 @@ li{
   border-radius: 5px;
   border: none;
   background-color: #f3f4f7;
+  outline: none;
 }
 .search{
 position: relative;
@@ -364,7 +365,7 @@ transition: 0.4s;
   letter-spacing: 1px;
 }
 
-.mainProduct{
+.proCategories .mainProduct{
   display: flex;
   flex-direction: column;
   width: 232px;
@@ -416,3 +417,47 @@ transition: 0.4s;
   text-align: left;
   font-family: "dosis"sans-serif;
 }
+
+.dealsWeek .mainProduct{
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 744px;
+  padding: 0px 15px;
+  border: 2px solid #ed174a;
+  background-color: white;
+  border-radius: 10px;
+}
+.dealsWeek .mainProduct .sale{
+  width: 80px;
+  height: 80px;
+  background-color: #ed174a;
+  border-radius: 50%;
+  position: relative;
+  top: 80px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+}
+
+.dealsWeek .miniProducts{
+  width: 780px;
+  height: 797px;
+  padding: 0px 15px;
+}
+
+.dealsWeek .miniProducts .row{
+  padding:0px 20px;
+  
+}
+.dealsWeek .miniProducts .row .col{
+  width: 249px;
+  height: 372px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
