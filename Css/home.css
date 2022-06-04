@@ -370,7 +370,7 @@ transition: 0.4s;
   flex-direction: column;
   width: 232px;
   height: 290px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ececec;
   background-color: white;
   border-radius: 5px 0px 0px 5px;
@@ -459,5 +459,25 @@ transition: 0.4s;
   height: 372px;
   transition: 0.5s;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
+
+#countdown li{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #ed174a;
+  color: white;
+  font-family:"dosis",sans-serif;
+  font-size: 20px;
+  margin: 0px 5px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#countdown .points{
+  padding-top: 10px;
+  font-weight: 600;
+}
