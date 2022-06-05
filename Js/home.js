@@ -45,3 +45,4 @@ var swiper = new Swiper(".mySwiper", {
             document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
         }, 0)
     }());
+
