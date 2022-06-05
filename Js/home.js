@@ -46,3 +46,23 @@ var swiper = new Swiper(".mySwiper", {
         }, 0)
     }());
 
+let preview=document.querySelector(".preview");
+let next=document.querySelector(".next");
+let firstBest=document.getElementById("firstBest");
+
+
+counter=0;
+$(function() {
+  $(next).click(function() {
+
+    counter++;
+    if(counter<4){
+     $(firstBest).css('margin-left', '-=234px');
+    }
+    else if(counter==4)
+    {
+      $(firstBest).css('margin-left', '+=702px');
+      counter=0;
+    }
+  });
+});
