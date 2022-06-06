@@ -731,7 +731,7 @@ transition: 0.4s;
 }
 
 .saveMoney{
-  width:1170px;
+  width:1175px;
   height:64px;
   background-color: #fbeacf;
   color: black;
@@ -742,8 +742,6 @@ transition: 0.4s;
   font-size: 16px;
   font-weight: 600;
   font-family: "inter",sans-serif;
-  margin-left: 170px;
-  margin-top: 50px;
   border-radius: 8px;
 }
 
@@ -822,3 +820,114 @@ transition: 0.4s;
    opacity: 1;
 }
 
+.weekendDiscounts .banner-1{
+  width: 370px;
+  height: 219px; 
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.weekendDiscounts .banner-1 .contentBanner{
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 40px;
+
+}
+
+.weekendDiscounts .banner-1 .contentBanner .weekDis{
+  font-size:14px;
+  font-family:dosis,sans-serif;
+  font-weight:600;
+  color:#20d132;
+  margin-bottom: 5px;
+}
+.weekendDiscounts .banner-1 .contentBanner .weekDisTitle{
+  font-size: 25px;
+  font-weight:600;
+  color:#3c4765;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+
+.weekendDiscounts .banner-1 .contentBanner .weekDisSlogan{
+  font-size: 13px;
+  color:#7d7d7d;
+  margin-bottom:20px;
+}
+.weekendDiscounts .banner-1 .contentBanner .shopNow{
+  background-color:#abb8c3;
+  width:100px;
+  height:32px;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:13px;
+  font-weight: 600;
+  border-radius:25px;
+}
+
+.foodBlogs .row .col{
+  width: 400px;
+  height: 392px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.foodBlogs .row .col img{
+  width: 370px;
+  height: 260px;
+  border-radius: 5px;
+}
+
+.foodBlogs .row .col .post{
+  width: 370px;
+  height: 106.5px;
+}
+
+.foodBlogs .row .col .post .head{
+  margin:10px 0px;
+  width: 370px;
+  height: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "dosis",sans-serif;
+  color: #9B9BB4;
+}
+
+.foodBlogs .row .col .post .title a{
+  width: 370px;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight:bolder;
+  font-family: "inter",sans-serif;
+  color:#000000;
+}
+.foodBlogs .row .col .post .ending{
+  width: 370px;
+  height: 21px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.foodBlogs .row .col .post .ending .time a{
+  margin-right: 8px;
+  color: #535353;
+  font-weight: 400;
+}
+.foodBlogs .row .col .post .ending .comments a{
+  margin-right: 8px;
+  color: black;
+  font-weight: 500;
+}
+.foodBlogs .row .col .post .ending .author a{
+  color: #000000;
+  font-weight: 500;
+  margin-left: 3px;
+  font-style: normal;
+}
