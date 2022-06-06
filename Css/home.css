@@ -310,12 +310,12 @@ transition: 0.4s;
 }
 
 
-.swiper {
+ .swiper {
   width: 100%;
   height: 460px;
 }
 
-.swiper-slide {
+ .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -529,7 +529,7 @@ transition: 0.4s;
   top: 50px;
   left: 20px;
 }
-.dealsWeek .miniProducts .row .col .addCart{
+ .addCart{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,14 +562,14 @@ transition: 0.4s;
   opacity: 0;
   padding: 5px;
 }
-.dealsWeek .miniProducts .row .col .popUp{
+ .popUp{
   position: absolute;
   top: 15px;
   right: 15px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #c0c0c051;
   box-shadow: 0px 0px 4px 0px rgb(228, 228, 228);
   display: flex;
   justify-content: center;
@@ -578,6 +578,7 @@ transition: 0.4s;
   transition: 0.2s;
   font-size: 14px;
   opacity: 0;
+  background-color: white;
 }
 
 .dealsWeek .miniProducts .row .col:hover {
@@ -607,7 +608,7 @@ transition: 0.4s;
   -o-transition: opacity 0.3s ease-in-out;
    opacity: 1;
 }
-.dealsWeek .miniProducts .row .col .addCart:hover{
+ .addCart:hover{
   box-shadow: 0px 0px 8px 3px rgba(52, 155, 200, 0.404);
 
 }
@@ -629,7 +630,7 @@ transition: 0.4s;
   -o-transition: opacity 0.7s ease-in-out;
    opacity: 1;
 }
-.dealsWeek .miniProducts .row .col .popUp:hover{
+.popUp:hover{
   background-color: #233a95;
   color: white;
 }
@@ -728,3 +729,96 @@ transition: 0.4s;
 .bestSellers .next:hover{
   box-shadow: 0px 0px 8px 4px rgba(187, 187, 187, 0.362);
 }
+
+.saveMoney{
+  width:1170px;
+  height:64px;
+  background-color: #fbeacf;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "inter",sans-serif;
+  margin-left: 170px;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.simpleProducts .container .row{
+  width: 1200px;
+  height: 736px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.simpleProducts .container .row .col{
+  border:1px solid #ECECEC;
+  min-width: 234px;
+  max-width: 234px;
+  height: 368px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.simpleProducts .container .row .col a img{
+  width: 180px;
+  height: 187px;
+}
+
+
+
+
+.simpleProducts .row .col:hover {
+  border-color: #d1d1d1;
+  box-shadow: 0px 1px 8px 8px rgba(218, 218, 218, 0.2);
+  border-radius: 10px 10px 0px 0px;
+  z-index: 1;
+
+}
+.simpleProducts  .row .col:hover .addCart{
+  color: #FFFFFF;
+  text-align: center;
+
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+   opacity: 1;
+}
+.simpleProducts .row .col:hover .addC {
+  color: #FFFFFF;
+  text-align: center;
+
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+   opacity: 1;
+}
+
+.simpleProducts .row .col:hover .fullScreen{
+  text-align: center;
+
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+   opacity: 1;
+}
+.simpleProducts .row .col:hover .heart{
+  text-align: center;
+
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+   opacity: 1;
+}
+
