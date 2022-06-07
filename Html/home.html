@@ -191,25 +191,43 @@ integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd
     
     <div class="container"style="padding-top:10px;background-color:white;max-height:80px;">
       <div class="row">
-        <div class="col">
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle categor" style="border:none;background-color:#2bbef9 ;border-radius:25px;width: 214px;height: 50px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="col dropdown">
+            <button class="catBtn" style="border:none;background-color:#2bbef9 ;border-radius:25px;width: 214px;height: 50px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <div class="totalProduct"><span>TOTAL 63 PRODUCTS</span></div>
-              <i class="fa-solid fa-bars"style="padding:10px;"><span style="padding:10px ;">ALL CATEGORIES</span></i>
+              <i class="fa-solid fa-bars"style="padding:10px;color:white"><span style="padding:10px; font-size:16px;color:white;font-weight:400;font-family: dosis,sans-serif;;">ALL CATEGORIES</span></i><i class="fa-solid fa-chevron-down"style="font-size:13px;color:white"></i>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="allCats">
+              <li class="nextOpen"><i class="fa-solid fa-apple-whole"></i><a href="#">Fruits & Vegetables<i class="fa-solid fa-chevron-right" style="margin-left:30px;font-size: 10px;"></i></a>
+              <div class="subMenuu">
+                <ul class="nextCats">
+                  <li><a href="">TEST</a></li>
+                  <li><a href="">TEST</a></li>
+                  <li><a href="">TEST</a></li>
+                  <li><a href="">TEST</a></li>
+                  <li><a href="">TEST</a></li>
+                  <li><a href="">TEST</a></li>
+                  <li><a href="">TEST</a></li>          
+                  </ul>
+              </div>
+            </li>
+              <li><i class="fa-solid fa-fish"></i><a href="#">Meats & SeaFoods</a></li>
+              <li><i class="fa-solid fa-egg"></i><a href="#">Breakfast & Dairy</a></li>
+              <li><i class="fa-solid fa-mug-hot"></i><a href="#">Beverages</a><i class="fa-solid fa-chevron-right" style="margin-left:80px;font-size: 10px;"></i></li>
+              <li><i class="fa-solid fa-cookie"></i><a href="#">Breads & Bakery</a></li>
+              <li><i class="fa-solid fa-snowflake"></i><a href="#">Frozen Foods</a></li>
+              <li><i class="fa-solid fa-candy-cane"></i><a href="#">Biscuits & Snacks</a></li>
+              <li><i class="fa-solid fa-leaf"></i><a href="#">Grocery & Staples</a><hr></li>
+              <li style="margin-top: 10px;"><a href="#"style="color: black;">Value of the Day</a></li>
+              <li><a href="#"style="color: black;">Top 100 Offers</a></li>
+              <li ><a href="#" style="color: black;">New arrivals</a></li>
             </ul>
-          </div>       
         </div>
         
         <div class="col">
-          <ul class="navMenu d-flex"style="padding-top:15px;">
+          <ul class="navMenu d-flex"style="padding-top:5px;">
             <li style="position: relative;">
               <div class="homes">
-              <button class="dropbtn home"style="width:100px;height:40px;border-radius:25px;"><span style="height: 100px;">HOME</span><i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
+              <button class="home"style="width:100px;height:40px;border-radius:25px;"><span style="height: 100px;">HOME</span><i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
               <ul class="home-content">
                 <li><a href="#">Home 1</a></li>
                 <li><a href="#">Home 2</a></li>
@@ -220,35 +238,80 @@ integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd
             </div>
           </li>
           <li>
-            <div class="dropdown"style="">
-            <button class="dropbtn home"style="width:100px;height: 40px;border-radius:25px;">SHOP<i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
-            <div class="dropdown-content home"style="width:100%;flex-direction:column;height:310px;position: absolute;left:-560px;margin-top:16px;">
-              <a href="#" style="margin-top:10px;">Home 1</a>
-              <a href="#">Home 2</a>
-              <a href="#">Home 3</a>
-              <a href="#">Home 4</a>
-              <a href="#">Home 5</a>
-          </div>
+            <div class="shopes">
+              <button class="home"style="width:100px;height:40px;border-radius:25px;border:none;"><span style="height: 100px;">SHOP</span><i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
+              <ul class="shope-content">
+                <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Shop List</a>
+                <ul>
+                <li style="padding-top:15px ;"><a href="">Shop Default</a></li>
+                <li><a href="">Shop Right Sidebar</a></li>
+                <li><a href="">Shop Wide</a></li>
+                <li><a href="">List Left Sidebar</a></li>
+                <li><a href="">Load More Button</a></li>
+                <li><a href="">Infinite Scrolling</a></li>
+                </ul>
+            </li>
+               <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Product Details</a>
+                  <ul>
+                    <li style="padding-top:15px ;"><a href="">Product Default</a></li>
+                    <li><a href="">Product Group</a></li>
+                    <li><a href="">Product External</a></li>
+                    <li><a href="">Product Downloadable</a></li>
+                    <li><a href="">Product With Video</a></li>
+                    </ul>
+               </li>
+                <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Product Types</a>
+                  <ul>
+                    <li style="padding-top:15px ;"><a href="">Single Type 1</a></li>
+                    <li><a href="">Single Type 2</a></li>
+                    <li><a href="">Single Type 3</a></li>
+                    <li><a href="">Single Type 4</a></li>
+                    <li><a href="">Thumbnail Left</a></li>
+                    <li><a href="">Zoom Image</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Shop Pages</a>
+                  <ul>
+                    <li style="padding-top:15px ;"><a href="">Cart</a></li>
+                    <li><a href="">Checkout</a></li>
+                    <li><a href="">My account</a></li>
+                    <li><a href="">Wishlist</a></li>
+                    <li><a href="">Order Tracking</a></li>
+                    <li><a href="">Order on Whatsapp</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Shop Layouts</a>
+                  <ul>
+                    <li style="padding-top:15px ;"><a href="">Two Columns</a></li>
+                    <li><a href="">Three Columns</a></li>
+                    <li><a href="">Three Columns Wide</a></li>
+                    <li><a href="">Four Columns</a></li>
+                    <li><a href="">Four Columns Wide</a></li>
+                    <li><a href="">Five Columns</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
         </li>
         <li>
           <div class="dropdown"style="">
-          <button class="dropbtn home"style="width:175px;height: 40px;border-radius:25px;"><i class="fa-solid fa-burger"style="margin-right:5px;font-size:18px;"></i>MEATS & SEAFOOD</button>
+          <button class="dropbtn"style="width:175px;height: 40px;border-radius:25px;"><i class="fa-solid fa-burger"style="margin-right:5px;font-size:18px;"></i>MEATS & SEAFOOD</button>
         </li>
       <li>
         <div class="dropdown"style="">
-        <button class="dropbtn home"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-cookie"style="margin-right:5px;font-size:20px;"></i>BAKERY</button>
+        <button class="dropbtn"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-cookie"style="margin-right:5px;font-size:20px;"></i>BAKERY</button>
       </li>
     <li>
       <div class="dropdown"style="">
-      <button class="dropbtn home"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-mug-hot"style="margin-right:5px;font-size:20px;"></i>BEVERAGES</button>
+      <button class="dropbtn"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-mug-hot"style="margin-right:5px;font-size:20px;"></i>BEVERAGES</button>
     </li>
   <li>
     <div class="dropdown"style="">
-    <button class="dropbtn home"style="width:100px;height: 40px;border-radius:25px;">BLOG</button>
+    <button class="dropbtn"style="width:100px;height: 40px;border-radius:25px;">BLOG</button>
   </li>
   <li>
   <div class="dropdown"style="">
-  <button class="dropbtn home"style="width:100px;height: 40px;border-radius:25px;">CONTACT</button>
+  <button class="dropbtn"style="width:100px;height: 40px;border-radius:25px;">CONTACT</button>
   </li>
     </ul>
         </div>
@@ -256,7 +319,7 @@ integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd
     </div>
   </div>
     
-   <div class="swiper mySwiper"style="position: relative;">
+     <div class="swiper mySwiper"style="position: relative;">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="../Img/slider-image-6.jpg" alt="" srcset="">
