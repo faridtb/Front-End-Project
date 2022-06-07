@@ -12,19 +12,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-  var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
 
 
   (function () {
@@ -60,3 +47,10 @@ var swiper = new Swiper(".mySwiper", {
         }, 0)
     }());
 
+
+  let prev=document.querySelector(".preview")
+  let next=document.querySelector(".next")
+
+  prev.addEventListener("click",function(){
+    
+  })
