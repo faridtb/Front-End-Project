@@ -61,6 +61,7 @@ li{
     position: relative;
     display: inline-block;
     margin-left: 25px;
+    max-height: 70px;
   }
   
   .dropdown-content {
@@ -382,7 +383,7 @@ color:#00c8ff
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 35px;
+  bottom: 10px;
   left: 70px;
   width: 101px;
   height: 18px;
