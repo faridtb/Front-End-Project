@@ -54,3 +54,5 @@ var swiper = new Swiper(".mySwiper", {
   prev.addEventListener("click",function(){
     
   })
+
+
