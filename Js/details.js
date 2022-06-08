@@ -15,3 +15,20 @@ function review(topic,crTop) {
   currentTopic.style.color="black";
 
 }
+
+
+let minus =document.getElementById("minus")
+let plus=document.getElementById("plus")
+let count=document.getElementById("count")
+
+
+minus.addEventListener("click",function(){
+    if(count.innerText>1)
+    {
+        count.innerText-=1;
+    }
+})
+
+plus.addEventListener("click",function(){
+    count.innerText=1+parseInt(count.innerText);
+})
