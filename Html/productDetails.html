@@ -29,6 +29,15 @@
              cursor: pointer;
             opacity: 0.75;
          }
+         .categ li span:hover{
+             text-decoration: underline;
+             cursor: pointer;
+         }
+         .sosial li:hover{
+             opacity: 0.75;
+             cursor: pointer;
+             transition: 0.3s;
+         }
 
      </style>
     <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -335,7 +344,7 @@
 
       <div class="container" style="width:1200px;">
         <div class="top" style="display:flex;justify-content:flex-start;align-items:center;padding:24px 0px;height:68px;font-size:12px;font-family: dosis,sans-serif;font-weight: 500;">HOME<i class="fa-solid fa-chevron-right"style="margin:0px 8px;font-size:8px;"></i>MEATS & SEAFOODS<i class="fa-solid fa-chevron-right"style="margin:0px 8px;font-size:8px;"></i><span style="color:#767676">ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</span></div>
-        <div class="productTable" style="height:760px;border:1px solid black;padding:40px;background-color: #ffffff;">
+        <div class="productTable" style="border-radius: 10px;height:760px;padding:40px;background-color: #ffffff;">
             <div class="productHeader" style="height:68px;margin-bottom:30px;">
             <div class="productName" style="font-size:24px;font-family:Inter,sans-serif;font-weight: 600;margin-bottom: 15px;">All Natural Italian-Style Chicken Meatballs</div>
             <div class="productMeta" style="display:flex;align-items:center;height:24px;">
@@ -392,18 +401,48 @@
                             <div class="wishList" style="border:1px solid #d5d6de;border-radius: 25px;width:135px;height:33px;display:flex;justify-content:center;align-items:center;font-size: 12px;font-family: dosis,sans-serif;"><i class="bi bi-heart" style="margin-right:10px;"></i>ADD TO WISHLIST</div>
                             <div class="wishList" style="margin-left:20px;width:67px;height:33px;display:flex;justify-content:center;align-items:center;font-size: 12px;font-family: dosis,sans-serif;"><i class="bi bi-arrow-down-up" style="margin-right:5px;"></i>COMPARE</div> 
                     </div>
-                    <div class="arrows" style="margin-top:25px;">
-                            <ul style="padding:0;">
-                                <li><i class="bi bi-check-lg"></i>Type:Organic</li>
-                                <li>bb</li>
-                                <li>cc</li>
+                    <div class="arrows border-bottom" style="margin-top:25px;">
+                            <ul style="padding:0;font-size: 12px;margin-bottom: 40px;font-family: inter,sans-serif;">
+                                <li style="color:#262626;"><i class="bi bi-check-lg" style="color:rgb(50, 254, 50);font-size: 15px;margin-right: 5px;"></i>Type: Organic</li>
+                                <li style="color:#262626;"><i class="bi bi-check-lg" style="color:rgb(50, 254, 50);font-size: 15px;margin-right: 5px;"></i>MFG: Jun 4.2021</li>
+                                <li style="color:#262626;"><i class="bi bi-check-lg" style="color:rgb(50, 254, 50);font-size: 15px;margin-right: 5px;"></i>LIFE: 30 days</li>
                             </ul>
                     </div>
-
-
+                    <div class="categ" style="margin-top:25px;font-size: 12px">
+                        <ul style="padding:0;font-size: 12px;font-family: inter,sans-serif;color:#afb0b6">
+                            <li style="margin-bottom:7px;">Category: <span style="color:#767676;font-weight: 600;">Meats & Seafood</span></li>
+                            <li>Tags: <span style="color:#767676;font-weight: 600;">chicken,</span>
+                                <span style="color:#767676;font-weight: 600;">natural,</span>
+                                <span style="color:#767676;font-weight: 600;">organic</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sosial" style="margin-top:25px;font-size: 12px">
+                        <ul style="display: flex;">
+                            <li style="margin-right:5px;width:34px;height:34px;background:#3b5998;color: white;display: flex;justify-content: center;align-items: center;border-radius: 50%;font-size: 15px;"><i class="fa-brands fa-facebook-f"></i></li>
+                            <li style="margin-right:5px;width:34px;height:34px;background:#1DA1F2;color: white;display: flex;justify-content: center;align-items: center;border-radius: 50%;font-size: 15px;"><i class="fa-brands fa-twitter"></i></li>
+                            <li style="margin-right:5px;width:34px;height:34px;background:#E60023;color: white;display: flex;justify-content: center;align-items: center;border-radius: 50%;font-size: 15px;"><i class="fa-brands fa-pinterest-p"></i></li>
+                            <li style="margin-right:5px;width:34px;height:34px;background:#0077B5;color: white;display: flex;justify-content: center;align-items: center;border-radius: 50%;font-size: 15px;"><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li style="margin-right:5px;width:34px;height:34px;background:#FF4500;color: white;display: flex;justify-content: center;align-items: center;border-radius: 50%;font-size: 15px;"><i class="fa-brands fa-reddit-alien"></i></li>
+                            <li style="margin-right:5px;width:34px;height:34px;background:#25d366;color: white;display: flex;justify-content: center;align-items: center;border-radius: 50%;font-size: 15px;"><i class="fa-brands fa-whatsapp"></i></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col" style="width:260px;height:580px;margin-left:40px;">
-                    sagol
+                    <div class="covid" style="width:260px;height: 38px;background-color: #ffeef2;color:#be143c;display: flex;justify-content: center;align-items: center;font-size: 12px;font-family: inter,sans-serif;margin-bottom: 12px;">Covid-19 Info: We keep delivering.</div>
+                    <div class="shipping" style="width:260px;height:228px;display:flex;justify-content:center;align-items:center;font-size:12px;font-family:inter,sans-serif;background:#f7f8fd;padding: 30px;">
+                        <ul style="font-size:20px;padding:0;margin:0;">
+                            <li style="margin-bottom:36px;"><i class="fa-solid fa-truck-fast"></i></li>
+                            <li style="margin-bottom:36px;"><i class="bi bi-cup-straw"></i></li>
+                            <li style="margin-bottom:36px;width: 20px;height:20px;border-radius:50%;border:1px solid rgb(0, 0, 0);display: flex;justify-content: center;align-items: center;"><i class="bi bi-currency-dollar" style="font-size:12px;padding-top: 2px;"></i></li>
+                        </ul>
+                        <ul style="font-size:12px;padding:0;margin-bottom:60px;margin-left:20px;">
+                            <li style="margin-bottom:36px;"></li>Free Shipping apply to all orders over $100</li>
+                            <li style="margin-bottom:36px;"></li>Guranteed 100% Organic from natural farmas</li>
+                            <li style="margin-bottom:36px;"></li>1 Day Returns if you change your mind</li>
+                           
+                        </ul>
+                    </div>
                 </div>
         
         </div>
@@ -427,7 +466,185 @@
     
      </div>
 </div>
+    <div class="container" style="width:1200px;margin-top: 50px;border-radius: 5px;background-color: white;padding:0;">
+        <div class="headinga border-bottom" style="padding:0px 20px;display: flex;height: 64px;">
+            <a href="" style="color:black;font-size:16px;font-family:dosis,sans-serif;padding:20px;">DESCRIPTION</a>
+            <a href="" style="color:rgb(200, 200, 200);font-size:16px;font-family:dosis,sans-serif;padding:20px;">ADDITIONAL INFORMATION</a>
+            <a href="" style="color:rgb(188, 188, 188);font-size:16px;font-family:dosis,sans-serif;padding:20px;">REVIEWS (1)</a>
+        </div>
+        <!-- <div class="tab-desc" style="font-size: 16px;font-family:inter,sans-serif;padding:20px 40px;">
+            <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
+            <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
+        </div> -->
+        <!-- <div class="add-tab" style="font-size: 16px;font-family:inter,sans-serif;padding:20px 40px;display: flex;">
+            <div class="col" style="border:1px solid rgb(232, 229, 229);">
+                <div class="brands" style="padding:8px;">Brands</div>
+            </div>
+            <div class="col" style="border:1px solid rgb(232, 229, 229);" >
+                <div class="brands" style="padding:8px;">Welch's</div>
+            </div>
+        </div> -->
+        <div class="review-tab" style="font-size: 16px;font-family:dosis,sans-serif;padding:20px 40px;display: flex; flex-direction: column;">
+            <span style="margin-bottom:8px;">1 REVIEW FOR ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</span>
+            <div class="prof-rew" style="display:flex;">
+            <div class="profile" style="width:60px;height:60px;border-radius:50%;background-image:url(../Img/girl.jpeg)"></div>
+            <ul style="padding-left: 15px;">
+                <li style="font-size:10px;margin-bottom:5px;">
+                    <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                    <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                    <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                    <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                    <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                </li>
+                <li style="margin-bottom:5px;">admin - <span style="color:rgb(128, 128, 128);font-size: 13px;font-family: inter,sans-serif;">May 2,2022</span></li>
+                <li>Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
+            </ul>
+            </div>
+            <div class="header border-bottom" style="font-size: 18px;font-family: inter,sans-serif;margin: 30px 0px;padding-bottom: 15px;">Add a review</div>
+             <p style="font-size: 13px;font-family:inter,sans-serif;">Your email address will not be published .<span>Required fields are marked *</span></p>   
+             <p style="font-size: 13px;font-family:inter,sans-serif;">Your rating *</p>
+             <ul style="padding:0;display: flex;">
+                <li class="border-end" style="font-size:10px;margin-right:15px;padding-right: 15px;">
+                    <i class="bi bi-star"></i>
+                </li>
+                <li class="border-end" style="font-size:10px;margin-right:15px;padding-right: 15px;">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </li>
+                <li class="border-end" style="font-size:10px;margin-right:15px;padding-right: 15px;">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </li>
+                <li class="border-end" style="font-size:10px;margin-right:15px;padding-right: 15px;">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </li>
+                <li class="" style="font-size:10px;margin-right:15px;padding-right: 15px;">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>  
+                </li>
+            </ul>
+            <p style="font-size: 13px;font-family:inter,sans-serif;">Your review *</p>
+            <textarea id="comment" name="comment" cols="45" rows="8" required="" style="outline: none;background:#f3f4f7;border:none;"></textarea>
+            <p style="font-size: 13px;font-family:inter,sans-serif;margin:20px 0px 10px;">Name *</p>
+            <input type="text" style="outline: none;background:#f3f4f7;border-radius:5px;border:none;height:40px;">
+            <p style="font-size: 13px;font-family:inter,sans-serif;margin:20px 0px 10px;">Email *</p>
+            <input type="text" style="outline: none;background:#f3f4f7;border-radius:5px;border:none;height:40px;">
+            <span style="display:flex;margin-top: 20px;height: 30px; align-items: center;"><input type="checkbox" name="" id="" style="margin-right: 10px;"><span style="font-size: 13px;font-family:inter,sans-serif;">Save my name, email, and website in this browser for the next time I comment.</span></span>
+            <div class="button" style="display:flex;justify-content:center;align-items:center;background:#233a95;color:white;width:90px;height:40px;border-radius: 5px;font-family: inter,sans-serif;font-size:15px;margin:20px 0px;">Submit</div> 
+        </div>    
+ </div>
+
+ <div class="container dealsWeek" style="width:1210px;margin-top: 50px;border-radius: 5px;padding:0;">
+    <p style="font-size:20px;font-family:dosis,sans-serif;">RELEATED PRODUCTS</p>
+    <div class="miniProducts" style="max-height:400px; ;">
+        <div class="row" style="padding: 0; width: 1210px;">
+    <div class="col" style="min-width:300px;max-width:300px;">
+        <a href=""><img src="../Img/product-image-31-346x310.jpg" alt="" srcset=""  style="width:251px;height:225px;"></a>  
+        <div class="fullScreen popUp"><i class="bi bi-arrows-fullscreen"></i></div>
+          <div class="heart popUp"style="margin-top:50px;"><i class="fa-regular fa-heart"></i></div>
+        <div class="productInfos">
+          <span class="category"><a href="">Organic 100% Grassfed 85_15 Ground Beef</a></span>
+          <span class="instock"style="font-family:dosis,sans-serif;font-size:12px;color:#00b853;font-weight:500;padding-top:10px;">IN STOCK</span>
+          <div class="stars"style="font-size:12px;padding-top:10px">
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#afb0b6;"></i>
+            <span style="margin-left:3px;">1</span>
+          </div>
+          <div class="prices d-flex"style="flex-direction:row;padding-top:10px;">
+            <div class="priceAfter"style="font-size:20px;font-weight:580;color:#d51243;font-family:dosis,sans-serif;">$5.99</div>
+            </div>
+        </div>  
+        <div class="addC" style="width:300px;"><div class="addCart">Add to card</div></div> 
+      </div>
       
+      <div class="col" style="min-width:300px;max-width:300px;">
+        <a href=""><img src="../Img/product-image-11-346x310.jpg" alt="" srcset=""  style="width:251px;height:225px;"></a>  
+        <div class="excSale">15%</div>
+        <div class="fullScreen popUp"><i class="bi bi-arrows-fullscreen"></i></div>
+          <div class="heart popUp"style="margin-top:50px;"><i class="fa-regular fa-heart"></i></div>
+        <div class="productInfos">
+          <span class="category"><a href="">Organic 100% Grassfed Sweet Lime</a></span>
+          <span class="instock"style="font-family:dosis,sans-serif;font-size:12px;color:#00b853;font-weight:500;padding-top:10px;">IN STOCK</span>
+          <div class="stars"style="font-size:12px;padding-top:10px">
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#afb0b6;"></i>
+            <span style="margin-left:3px;">1</span>
+          </div>
+          <div class="prices d-flex"style="flex-direction:row;padding-top:10px;align-items:center;">
+            <div class="priceBefore"style="font-size:15px;font-weight:580;color:#D5D5D5;text-decoration: line-through;padding-top:5px;font-family:dosis,sans-serif;margin-right:10px;">$6.99</div>
+            <div class="priceAfter"style="font-size:20px;font-weight:580;color:#d51243;font-family:dosis,sans-serif;">$5.99</div>
+            </div>
+        </div>  
+        <div class="addC" style="width:300px;"><div class="addCart">Add to card</div></div> 
+      </div>
+      <div class="col" style="min-width:300px;max-width:300px;">
+        <a href=""><img src="../Img/product-image-7-346x310.jpg" alt="" srcset=""  style="width:251px;height:225px;"></a>  
+        <div class="excSale">38%</div>
+        <div class="fullScreen popUp"><i class="bi bi-arrows-fullscreen"></i></div>
+          <div class="heart popUp"style="margin-top:50px;"><i class="fa-regular fa-heart"></i></div>
+        <div class="productInfos">
+          <span class="category"><a href="">USDA Choice Angus Beef Stew Meat</a></span>
+          <span class="instock"style="font-family:dosis,sans-serif;font-size:12px;color:#00b853;font-weight:500;padding-top:10px;">IN STOCK</span>
+          <div class="stars"style="font-size:12px;padding-top:10px">
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#afb0b6;"></i>
+            <span style="margin-left:3px;">1</span>
+          </div>
+          <div class="prices d-flex"style="flex-direction:row;padding-top:10px;align-items:center;">
+            <div class="priceBefore"style="font-size:15px;font-weight:580;color:#D5D5D5;text-decoration: line-through;padding-top:5px;font-family:dosis,sans-serif;margin-right:10px;">$79.99</div>
+            <div class="priceAfter"style="font-size:20px;font-weight:580;color:#d51243;font-family:dosis,sans-serif;">$49.99</div>
+            </div>
+        </div>  
+        <div class="addC" style="width:300px;"><div class="addCart">Add to card</div></div> 
+      </div>
+      <div class="col" style="min-width:300px;max-width:300px;">
+        <a href=""><img src="../Img/product-image-12-346x310.jpg" alt="" srcset=""  style="width:251px;height:225px;"></a> 
+        <div class="excSale">25%</div> 
+        <div class="fullScreen popUp"><i class="bi bi-arrows-fullscreen"></i></div>
+          <div class="heart popUp"style="margin-top:50px;"><i class="fa-regular fa-heart"></i></div>
+        <div class="productInfos">
+          <span class="category"><a href="">Organic 100% Grassfed 85_15 Ground Beef</a></span>
+          <span class="instock"style="font-family:dosis,sans-serif;font-size:12px;color:#00b853;font-weight:500;padding-top:10px;">IN STOCK</span>
+          <div class="stars"style="font-size:12px;padding-top:10px">
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+            <i class="bi bi-star-fill"style="color:#afb0b6;"></i>
+            <span style="margin-left:3px;">1</span>
+          </div>
+          <div class="prices d-flex"style="flex-direction:row;padding-top:10px;align-items:center;">
+            <div class="priceBefore"style="font-size:15px;font-weight:580;color:#D5D5D5;text-decoration: line-through;padding-top:5px;font-family:dosis,sans-serif;margin-right:10px;">$12.00</div>
+            <div class="priceAfter"style="font-size:20px;font-weight:580;color:#d51243;font-family:dosis,sans-serif;">$8.99</div>
+            </div>
+        </div>  
+        <div class="addC" style="width:300px;"><div class="addCart">Add to card</div></div> 
+      </div>
+      
+      
+      
+      
+      
+    </div>
+</div>
+
+</div>
       
       
       
