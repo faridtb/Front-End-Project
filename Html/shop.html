@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My Css -->
+    <link rel="stylesheet" href="../Css/home.css">
+     <!-- Swiper -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Shablon</title>
+</head>
+<body>
+    <div class="top"> 
+        <div class="heading">
+            Due to the COVID 19 epidemic, orders may be processed with a slight delay
+        </div>
+        <div class="thenHeading"style="background-color:white;">
+            <div class="container">
+                <div class="row">
+                  <div class="col-4 d-flex justify-content-start">
+                    <ul class="d-flex" style="padding-top:8px;">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">My account</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Order Tracking</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-4  d-flex justify-content-center" style="padding-left:100px ;">
+                    <i class="fa-solid fa-shield-halved" style="margin-top:13px;font-size:17px;"></i>
+                    <span style="margin:10px 5px;color: rgb(0, 0, 0);">100% Secure delivery without contacting the courier</span>
+                  </div>
+                  <div class="col-4 d-flex justify-content-start">
+                    <div class="text-content" style="color:rgb(41, 41, 41) ;padding-top:10px; height: 25px;"><span class="border-start"style="padding-left:20px" >Need help? Call Us: </span> <a style="text-decoration:none;" href="#"><strong style="color: #2bbef9">+ 994 568</strong></a></div>
+                    <div class="dropdown border-start"style="padding-left:10px;padding-top:10px; height:44px;">
+                        <button class="dropbtn">English<i class="fa-solid fa-chevron-down" style="font-size:10px;padding-left:5px;"></i></button>
+                        <div class="dropdown-content lang"style="margin-top:15px;">
+                          <a href="#" style="margin-top:15px;">English</a>
+                          <a href="#">Spanish</a>
+                          <a href="#">German</a>
+                      </div>      
+                  </div>
+                  <div class="dropdown"style="padding-right:15px;padding-top:10px;">
+                    <button class="dropbtn">USD<i class="fa-solid fa-chevron-down" style="font-size:10px;padding-left:5px;"></i></button>
+                    <div class="dropdown-content lang"style="margin-top:15px;">
+                      <a href="#" style="margin-top:15px;">USD</a>
+                      <a href="#">INR</a>
+                      <a href="#">GPB</a>
+                  </div>      
+              </div>
+                </div>
+              </div>
+         </div>
+      </div>
+      </div>
+      <div class="nav-container"style="padding:30px 30px 0px 30px;background-color:white;box-shadow: 0px 0.5px 1px 0px rgba(0,0,0,0.2);">
+        <div class="container">
+          <div class="row">
+    
+            <div class="col"style="padding-left:45px;">
+              <a href=""><img src="../Img/bacola-logo.png" style="width:164px;height:43.8px;padding-left:5px ;" alt="">
+              <span class="brand-description" style="font-size:11px;color:#afb0b6;font-family:sans-serif;">Online Grocery Shopping Center</span></a>
+            </div>
+    
+            <div class="col">
+              <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"id="location">
+              <span class="location"style="font-size:10px;color:#afb0b6;">Your Location</span>
+              <div class="currentLoc">Select a Location</div>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+              <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content"style="width:450px;">
+    
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-title" id="exampleModalLabel">Choose your Delivery Location</div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <span style="font-size:13px;">Enter you adress and we will specify the offer your area.</span>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="searchModal">
+                      <input type="text"id="modalSearch"placeholder="Searh your area">
+                      <i class="fa-solid fa-magnifying-glass zoom"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <ul style="list-style: none;flex-direction: column; max-height:300px;width: 350px;"class="d-flex justify-content-start align-items-start">
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Select a Location</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Clear All</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Alabama</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $110</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Aghdam</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $120</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Absheron</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $99</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Baku</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $125</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">California</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $110</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Calilabad</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $140</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Khurdamir</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $255</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Nakhcivan</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $850</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Ganja</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $242</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:10px 0px;position: relative;">
+                <a href="" class="modalList" style="color: black;">Sumqayit</a>
+                <a href=""style="font-size:10px;color:gray;position:absolute;right:0px;"><div class="prices" style="min-width:60px;max-width:80px;height: 20px; border-radius: 15px; border: 1px solid rgb(204, 204, 204);display: flex;justify-content: center;align-items: center;">Min: $115</div></a>
+              </li>
+              <li class="d-flex justify-content-start align-items-center border-bottom" style="width:100%;height:40px;margin:20px 0px;position: relative;">
+            
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          </div>
+    
+            </div>
+    
+            <div class="col">
+              <div class="search">
+                <input type="text"id="navbarSearch"placeholder="Searh for products...">
+                <i class="fa-solid fa-magnifying-glass zoom"></i>
+              </div>
+            </div>
+    
+            <div class="col">
+              <a href=""style="color:gray"><div class="myAccount"><i class="fa-solid fa-user"></i></div></a> 
+            </div>
+    
+            <div class="col">
+              <div class="count">
+               <a href=""style="color:black"><span class="dollar">$<span class="amount">0.00</span></span></a>
+               <div class="basketPop">
+                 <img src="../Img/empty-removebg-preview.png"style="width:125px;height:100px;" alt="" srcset="">
+                 <span class="basketContent" style="font-size:14px;font-weight:600;">No product in the cart</span>
+                 <span class="sale" style="font-size:12px; padding-top:45px;"><hr> We reduce shipping prices to only 2.49$</span>
+               </div> 
+                <a href=""class="basketLogo" style="color:rgb(235, 52, 52);">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                  <div class="counter">0</div>
+                </a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        
+        <div class="container"style="padding-top:10px;background-color:white;max-height:80px;">
+          <div class="row">
+            <div class="col dropdown">
+                <button class="catBtn" style="border:none;background-color:#2bbef9 ;border-radius:25px;width: 214px;height: 50px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="totalProduct"><span>TOTAL 63 PRODUCTS</span></div>
+                  <i class="fa-solid fa-bars"style="padding:10px;color:white"><span style="padding:10px; font-size:16px;color:white;font-weight:400;font-family: dosis,sans-serif;;">ALL CATEGORIES</span></i><i class="fa-solid fa-chevron-down"style="font-size:13px;color:white"></i>
+                </button>
+                <ul class="allCats">
+                  <li class="nextOpen"><i class="fa-solid fa-apple-whole"></i><a href="#">Fruits & Vegetables<i class="fa-solid fa-chevron-right" style="margin-left:30px;font-size: 10px;"></i></a>
+                  <div class="subMenuu">
+                    <ul class="nextCats">
+                      <li><a href="">TEST</a></li>
+                      <li><a href="">TEST</a></li>
+                      <li><a href="">TEST</a></li>
+                      <li><a href="">TEST</a></li>
+                      <li><a href="">TEST</a></li>
+                      <li><a href="">TEST</a></li>
+                      <li><a href="">TEST</a></li>          
+                      </ul>
+                  </div>
+                </li>
+                  <li><i class="fa-solid fa-fish"></i><a href="#">Meats & SeaFoods</a></li>
+                  <li><i class="fa-solid fa-egg"></i><a href="#">Breakfast & Dairy</a></li>
+                  <li><i class="fa-solid fa-mug-hot"></i><a href="#">Beverages</a><i class="fa-solid fa-chevron-right" style="margin-left:80px;font-size: 10px;"></i></li>
+                  <li><i class="fa-solid fa-cookie"></i><a href="#">Breads & Bakery</a></li>
+                  <li><i class="fa-solid fa-snowflake"></i><a href="#">Frozen Foods</a></li>
+                  <li><i class="fa-solid fa-candy-cane"></i><a href="#">Biscuits & Snacks</a></li>
+                  <li><i class="fa-solid fa-leaf"></i><a href="#">Grocery & Staples</a><hr></li>
+                  <li style="margin-top: 10px;"><a href="#"style="color: black;">Value of the Day</a></li>
+                  <li><a href="#"style="color: black;">Top 100 Offers</a></li>
+                  <li ><a href="#" style="color: black;">New arrivals</a></li>
+                </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="navMenu d-flex"style="padding-top:5px;">
+                <li style="position: relative;">
+                  <div class="homes">
+                  <button class="home"style="width:100px;height:40px;border-radius:25px;"><span style="height: 100px;">HOME</span><i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
+                  <ul class="home-content">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                    <li><a href="#">Home 4</a></li>
+                    <li><a href="#">Home 5</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="shopes">
+                  <button class="home"style="width:100px;height:40px;border-radius:25px;border:none;"><span style="height: 100px;">SHOP</span><i class="fa-solid fa-chevron-down"style="padding-left:12px;font-size:12px;"></i></button>
+                  <ul class="shope-content">
+                    <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Shop List</a>
+                    <ul>
+                    <li style="padding-top:15px ;"><a href="">Shop Default</a></li>
+                    <li><a href="">Shop Right Sidebar</a></li>
+                    <li><a href="">Shop Wide</a></li>
+                    <li><a href="">List Left Sidebar</a></li>
+                    <li><a href="">Load More Button</a></li>
+                    <li><a href="">Infinite Scrolling</a></li>
+                    </ul>
+                </li>
+                   <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Product Details</a>
+                      <ul>
+                        <li style="padding-top:15px ;"><a href="">Product Default</a></li>
+                        <li><a href="">Product Group</a></li>
+                        <li><a href="">Product External</a></li>
+                        <li><a href="">Product Downloadable</a></li>
+                        <li><a href="">Product With Video</a></li>
+                        </ul>
+                   </li>
+                    <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Product Types</a>
+                      <ul>
+                        <li style="padding-top:15px ;"><a href="">Single Type 1</a></li>
+                        <li><a href="">Single Type 2</a></li>
+                        <li><a href="">Single Type 3</a></li>
+                        <li><a href="">Single Type 4</a></li>
+                        <li><a href="">Thumbnail Left</a></li>
+                        <li><a href="">Zoom Image</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Shop Pages</a>
+                      <ul>
+                        <li style="padding-top:15px ;"><a href="">Cart</a></li>
+                        <li><a href="">Checkout</a></li>
+                        <li><a href="">My account</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Order Tracking</a></li>
+                        <li><a href="">Order on Whatsapp</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="#" style="margin:0px 50px;font-weight: 600;color: #233a95;">Shop Layouts</a>
+                      <ul>
+                        <li style="padding-top:15px ;"><a href="">Two Columns</a></li>
+                        <li><a href="">Three Columns</a></li>
+                        <li><a href="">Three Columns Wide</a></li>
+                        <li><a href="">Four Columns</a></li>
+                        <li><a href="">Four Columns Wide</a></li>
+                        <li><a href="">Five Columns</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+            <li>
+              <div class="dropdown"style="">
+              <button class="dropbtn"style="width:175px;height: 40px;border-radius:25px;"><i class="fa-solid fa-burger"style="margin-right:5px;font-size:18px;"></i>MEATS & SEAFOOD</button>
+            </li>
+          <li>
+            <div class="dropdown"style="">
+            <button class="dropbtn"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-cookie"style="margin-right:5px;font-size:20px;"></i>BAKERY</button>
+          </li>
+        <li>
+          <div class="dropdown"style="">
+          <button class="dropbtn"style="width:120px;height: 40px;border-radius:25px;"><i class="fa-solid fa-mug-hot"style="margin-right:5px;font-size:20px;"></i>BEVERAGES</button>
+        </li>
+      <li>
+        <div class="dropdown"style="">
+        <button class="dropbtn"style="width:100px;height: 40px;border-radius:25px;">BLOG</button>
+      </li>
+      <li>
+      <div class="dropdown"style="">
+      <button class="dropbtn"style="width:100px;height: 40px;border-radius:25px;">CONTACT</button>
+      </li>
+        </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="width:1200px;">
+        <div class="top" style="display:flex;justify-content:flex-start;align-items:center;padding:24px 0px;height:68px;font-size:12px;font-family: dosis,sans-serif;font-weight: 500;">HOME<i class="fa-solid fa-chevron-right"style="margin:0px 8px;font-size:8px;"></i>SHOP</div>
+        <div class="row" style="width:1200px;position: relative;">
+            <div class="col" style="display:flex;justify-content:start;align-items:start;flex-direction:column;min-width:300px;height:1500px;padding-right: 30px;">
+            </div>
+
+            <div class="col" style="display:flex;justify-content:start;align-items:flex-start;flex-direction:column;min-width:900px;height:2900px;padding:0px 15px 0px 30px;">
+                  <a href="" style="width:100%;position: relative;display: flex;justify-content: center;align-items: center;margin-bottom: 20px;"><img src="../Img/bacola-banner-18.jpg" alt="" srcset=""style="width:100%;object-fit:cover;border-radius:8px;">
+                    <div class="text" style="position:absolute;font-size: 28px;font-family: dosis,sans-serif;font-weight: 100;color:rgb(38, 38, 38);top: 60px;left: 260px;">Organic Meals Prepared</div>
+                    <div class="text" style="position:absolute;font-size: 28px;font-family: inter,sans-serif;font-weight: 500;color:rgb(0, 0, 0);left:260px;margin: 25px 0px;">Delivered to <span style="color:rgb(61, 193, 61);">your Home</span></div>
+                    <p style="font-size:13px;position:absolute;left:260px;top:140px;color: #afb0b6;">Fully prepared & delivered nationiwde.</p>
+                    </a>
+                    <div class="menubar" style="width: 855px;height:56px;padding:0px 30px;margin-bottom:20px;background-color: #f7f8fd;border-radius: 7px;display: flex;align-items: center;position: relative;justify-content: space-between;">
+                        <ul style="display: flex;align-items: center;padding: 0;margin: 0;">
+                            <li style="margin-right:20px;font-size: 20px;"><i class="fa-solid fa-bars"></i></li>
+                            <li style="margin-right:20px;font-size: 20px;color:#bbbbbb"><i class="bi bi-grid-fill"></i></li>
+                            <li style="margin-right:20px;font-size: 20px;color:#bbbbbb"><i class="bi bi-grid-3x3-gap-fill"></i></li>
+                            <li style="margin-right:20px;font-size: 20px;color:#bbbbbb"><i class="bi bi-grid-3x3-gap-fill"></i></li>
+                        </ul>
+                        <div class="dropMenus" style="display: flex;font-size: 13px;font-family: inter,sans-serif;">
+                            <div class="sortMenu border-end" style="cursor:pointer;height: 40px;padding:8px 25px 0px 6px;font-weight: 600;">Sort by latest<i class="bi bi-chevron-down" style="margin-left:10px;"></i></div>
+                            <div class="sortMenu" style="cursor:pointer;height: 40px;padding:8px 0px 0px 25px;">Show <span style="font-weight: 600;margin-right: 15px;">12</span><i class="bi bi-chevron-down"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="container dealsWeek" style="width:900x;margin-top: 50px;border-radius: 5px;padding:0;">
+                        <p style="font-size:20px;font-family:dosis,sans-serif;">RELEATED PRODUCTS</p>
+                        <div class="miniProducts" style="max-height:400px;margin: 0;padding: 0;width: 100%">
+                            <div class="row" style="padding: 0; width: 100%">
+                        <div class="col" style="width:284px;">
+                            <a href=""><img src="../Img/product-image-31-346x310.jpg" alt="" srcset=""  style=""></a>  
+                            <div class="excSale">19%</div>
+                            <div class="recommend">RECOMMENDED</div></a>   
+                            <div class="fullScreen popUp"><i class="bi bi-arrows-fullscreen"></i></div>
+                              <div class="heart popUp"style="margin-top:50px;"><i class="fa-regular fa-heart"></i></div>
+                            <div class="productInfos">
+                              <span class="category"><a href="">Organic 100% Grassfed 85_15 Ground Beef</a></span>
+                              <span class="instock"style="font-family:dosis,sans-serif;font-size:12px;color:#00b853;font-weight:500;padding-top:10px;">IN STOCK</span>
+                              <div class="stars"style="font-size:12px;padding-top:10px">
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#afb0b6;"></i>
+                                <span style="margin-left:3px;">1</span>
+                              </div>
+                              <div class="prices d-flex"style="flex-direction:row;padding-top:10px;">
+                                <div class="priceAfter"style="font-size:20px;font-weight:580;color:#d51243;font-family:dosis,sans-serif;">$5.99</div>
+                                </div>
+                            </div>  
+                            <div class="addC" style="width:284px;"><div class="addCart">Add to card</div></div> 
+                          </div>
+                          <div class="col" style="width:284px;">
+                            <a href=""><img src="../Img/product-image-31-346x310.jpg" alt="" srcset=""  style=""></a>  
+                            <div class="excSale">19%</div>
+                            <div class="recommend">RECOMMENDED</div></a>  
+                            <div class="fullScreen popUp"><i class="bi bi-arrows-fullscreen"></i></div>
+                              <div class="heart popUp"style="margin-top:50px;"><i class="fa-regular fa-heart"></i></div>
+                            <div class="productInfos">
+                              <span class="category"><a href="">Organic 100% Grassfed 85_15 Ground Beef</a></span>
+                              <span class="instock"style="font-family:dosis,sans-serif;font-size:12px;color:#00b853;font-weight:500;padding-top:10px;">IN STOCK</span>
+                              <div class="stars"style="font-size:12px;padding-top:10px">
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#afb0b6;"></i>
+                                <span style="margin-left:3px;">1</span>
+                              </div>
+                              <div class="prices d-flex"style="flex-direction:row;padding-top:10px;">
+                                <div class="priceAfter"style="font-size:20px;font-weight:580;color:#d51243;font-family:dosis,sans-serif;">$5.99</div>
+                                </div>
+                            </div>  
+                            <div class="addC" style="width:284px;"><div class="addCart">Add to card</div></div> 
+                          </div>
+                          <div class="col" style="width:284px;">
+                            <a href=""><img src="../Img/product-image-31-346x310.jpg" alt="" srcset=""  style=""></a>  
+                            <div class="excSale">19%</div>
+                            <div class="recommend">RECOMMENDED</div></a>  
+                            <div class="fullScreen popUp"><i class="bi bi-arrows-fullscreen"></i></div>
+                              <div class="heart popUp"style="margin-top:50px;"><i class="fa-regular fa-heart"></i></div>
+                            <div class="productInfos">
+                              <span class="category"><a href="">Organic 100% Grassfed 85_15 Ground Beef</a></span>
+                              <span class="instock"style="font-family:dosis,sans-serif;font-size:12px;color:#00b853;font-weight:500;padding-top:10px;">IN STOCK</span>
+                              <div class="stars"style="font-size:12px;padding-top:10px">
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#FFD500;"></i>
+                                <i class="bi bi-star-fill"style="color:#afb0b6;"></i>
+                                <span style="margin-left:3px;">1</span>
+                              </div>
+                              <div class="prices d-flex"style="flex-direction:row;padding-top:10px;">
+                                <div class="priceAfter"style="font-size:20px;font-weight:580;color:#d51243;font-family:dosis,sans-serif;">$5.99</div>
+                                </div>
+                            </div>  
+                            <div class="addC" style="width:284px;"><div class="addCart">Add to card</div></div> 
+                          </div>
+                          
+                            
+                          
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+      <footer style="margin-top:125px;">
+
+        <div class="subscribe"style="width:100%;height:353px;background:#233a95;">
+          <div class="container">
+            <div class="row" style="width:1200px;height:353px;">
+              <div class="col-12" style="width:500px;height:353px;padding:15px;">
+                <div class="content" style="width:470px;height:353px;padding:70px 45px;">
+                  <div class="discount" style="color: white;font-weight:300;font-size: 17px;margin-bottom: 8px;">20% discount for your first order</div>
+                  <h3 class="entry-title"style="color:white;font-family:inter,sans-serif;margin-bottom:15px;font-weight:bolder;font-size:26px;">Join our newsletter and get...</h3>
+                  <p style="margin-bottom: 32px;color:#cdcdcda4;font-family:inter,sans-serif;font-size: 13px;font-weight:bolder;">Join our email subscription now to get updates on promotions and coupons.</p>
+                  <div class="inputs" style="position: relative;">
+                    <input type="email"placeholder="Your email address"style="padding-left:50px;width:472px;height:62px;padding-right:15px;border-radius:5px;outline:none;border:none;">
+                    <div class="mail" style="left: 15px;top:15px;position: absolute;font-size: 20px;color: #afb0b6;"><i class="bi bi-envelope"></i></div>
+                    <a href=""><div class="tes" style="width:103px;height:54px; display:flex; justify-content:center; align-items:center;background-color:#233a95;color:white; right:-85px;top:4px;position: absolute;border-radius: 7px;">Subscribe</div></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12"style="width:700px;height:277px;padding:0px 15px;">
+                <div class="image" style="display:flex; justify-content:flex-end;margin-left:70px;padding-top: 76px;">
+                  <img src="../Img/coupon.png" alt="" srcset="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="icons" style="padding:35px; background-color: #f7f8fd;">
+          <div class="container">
+            <div class="row">
+              <div class="col border-end"style="max-width:300px;height:33px;padding:0px 15px;">
+                <div class="iconbox" style="display:flex;justify-content:center;align-items:center;width:270px;height:33px;">
+                <div class="icon" style="font-size: 24px;margin-right: 5px;"><i class="bi bi-cup-straw"></i></div>
+                <div class="text" style="font-family:inter,sans-serif;font-size: 13px;">Everyday fresh products</div>
+                </div>
+              </div>
+              <div class="col border-end"style="max-width:300px;height:33px;padding:0px 15px;">
+                <div class="iconbox" style="display:flex;justify-content:center;align-items:center;width:270px;height:33px;">
+                <div class="icon" style="font-size: 18px;margin-right: 10px;"><i class="fa-solid fa-truck-fast"></i></div>
+                <div class="text" style="font-family:inter,sans-serif;font-size: 13px;">Free delivery for order over $70 </div>
+                </div>
+              </div>
+              <div class="col border-end"style="max-width:300px;height:33px;padding:0px 15px;">
+                <div class="iconbox" style="display:flex;justify-content:center;align-items:center;width:270px;height:33px;">
+                <div class="icon" style="font-size: 24px;margin-right: 5px;"><i class="fa-solid fa-cookie"></i></div>
+                <div class="text" style="font-family:inter,sans-serif;font-size: 13px;">Daily Mega Discounts</div>
+                </div>
+              </div>
+              <div class="col"style="max-width:300px;height:33px;padding:0px 15px;">
+                <div class="iconbox" style="display:flex;justify-content:center;align-items:center;width:270px;height:33px;">
+                <div class="icon" style="font-size: 24px;margin-right: 5px;width: 30px;height: 30px;border-radius: 50%;display: flex;justify-content: center;align-items: center;border: 1px solid rgb(48, 48, 48); "><i class="bi bi-currency-dollar"></i></div>
+                <div class="text" style="font-family:inter,sans-serif;font-size: 13px;">Best price on the market</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="widgets" style="background-color: #f7f8fd;">
+          <div class="container border-top" style="padding:100px 15px;height: 509px;width: 1200px;">
+            <div class="row">
+              <div class="col" style="max-width:240px;height: 307px;padding: 0px 15px;font-family: dosis,sans-serif;">
+                <div class="title" style="font-size: 16px;font-weight:bolder;margin-bottom:20px;color:#262626;">FRUITS & VEGETABLES</div>
+                <ul style="list-style:none;padding:0px;font-family:inter,sans-serif;font-size: 13px;">
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Fresh Vegetables</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Herbs & Seasonings</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Fresh Fruits</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Cuts & Sprouts</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Exotic Fruits & Veggies</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Packaged Produce</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Party Trays</a></li>
+                </ul>
+              </div>
+              <div class="col" style="max-width:240px;height: 307px;padding: 0px 15px;font-family: dosis,sans-serif;">
+                <div class="title" style="font-size: 16px;font-weight:bolder;margin-bottom:20px;color:#262626;">BREAKFAST & DIARY</div>
+                <ul style="list-style:none;padding:0px;font-family:inter,sans-serif;font-size: 13px;">
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Milk & Flavoured Milk</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Butter and Margarine</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Cheese</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Eggs Substitutes</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Honey</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Marmalades</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Sour Cream and Dips</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Yogurt</a></li>
+                </ul>
+              </div>
+              <div class="col" style="max-width:240px;height: 307px;padding: 0px 15px;font-family: dosis,sans-serif;">
+                <div class="title" style="font-size: 16px;font-weight:bolder;margin-bottom:20px;color:#262626;">MEATS & SEAFOOD</div>
+                <ul style="list-style:none;padding:0px;font-family:inter,sans-serif;font-size: 13px;">
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Breakfast Sausage</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Dinner Sausage</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Beef</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Chicken</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Sliced Deli Meat</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Shrimp</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Wild Caught Fillets</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Crab and Shellfish</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Farm Raised Fillets</a></li>
+                </ul>
+              </div>
+              <div class="col" style="max-width:240px;height: 307px;padding: 0px 15px;font-family: dosis,sans-serif;">
+                <div class="title" style="font-size: 16px;font-weight:bolder;margin-bottom:20px;color:#262626;">BEVERAGES</div>
+                <ul style="list-style:none;padding:0px;font-family:inter,sans-serif;font-size: 13px;">
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Water</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Sparkling Water</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Soda & Pop</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Cofee</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Milk & Plant-Based Milk</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Tea & Kombucha</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Drink Boxes & Pouches</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Craft Beer</a></li>
+                  <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Wine</a></li>
+                </ul>
+              </div>
+            <div class="col" style="max-width:240px;height: 307px;padding: 0px 15px;font-family: dosis,sans-serif;">
+              <div class="title" style="font-size: 16px;font-weight:bolder;margin-bottom:20px;color:#262626;">BREADS & BAKERY</div>
+              <ul style="list-style:none;padding:0px;font-family:inter,sans-serif;font-size: 13px;">
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Milk & Flavoured Milk</a></li>
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Butter and Margarine</a></li>
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Cheese</a></li>
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Eggs Substitutes</a></li>
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Pomidor Yumurta</a></li>
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Qaymaq Bal</a></li>
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Khukhu</a></li>
+                <li style="margin-bottom:8px;"><a href="" style="color:#767676;">Kolbasha Burtebhrod</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+      
+        <div class="contacts" style="width:100%;height: 135.5px;padding: 46px 0px; font-size: 16px;font-family: inter,sans-serif;background-color: #ffffff;">
+          <div class="container" style="width:1200px; height:43.5px;padding:0px 15px;">
+            <div class="row">
+              <div class="col d-flex">
+                <div class="phoneInfos" style="display:flex; justify-content:center;align-items:center;width: 300px;height:43px;">
+                <div class="phoneIcon" style="width:42px;height:42px;border:1px solid rgb(151, 151, 151);border-radius:50%;display: flex;justify-content: center;align-items: center;margin-right: 15px;"><i class="bi bi-telephone"></i></div>
+                <div class="numberInfos" style="height:42px;font-family: inter,sans-serif;">
+                  <div class="number" style="font-size:20px;color:black; font-weight:500;">+994 50 568-38-10 </div>
+                  <div class="text" style="font-size:11px;color:#767676">Working 8:00 - 22:00</div>
+                </div>
+                </div>
+              </div>
+              <div class="col d-flex">
+                <div class="texts" style="margin-right:20px;width: 200px;">
+                  <div class="first" style="font-size:14px;font-weight:bold;text-align: right;">Download App on Mobile:</div>
+                  <div class="second" style="font-size:12px;color: #767676;">15% discount on your first purchase</div>
+                </div>
+                  <div class="playmarket" style="margin-right:5px;"><img src="../Img/google-play.png" alt="" srcset=""></div>
+                  <div class="appStore"><img src="../Img/app-store.png" alt="" srcset=""></div>
+                  <a href="" style="color:#233a95"><div class="face" style="width: 34px;height:34px;border:1px solid rgba(140, 140, 140, 0.658);display: flex;justify-content: center;align-items: center;margin:0px 10px 0px 20px;border-radius: 50%;"><i class="fa-brands fa-facebook-f"></i></div></a>
+                  <a href="" style="color:#233a95"><div class="face" style="width: 34px;height:34px;border:1px solid rgba(140, 140, 140, 0.658);display: flex;justify-content: center;align-items: center;margin-right: 10px;border-radius: 50%;"><i class="fa-brands fa-twitter"></i></div></a>
+                  <a href="" style="color:#233a95"><div class="face" style="width: 34px;height:34px;border:1px solid rgba(140, 140, 140, 0.658);display: flex;justify-content: center;align-items: center;margin-right: 10px;border-radius: 50%;"><i class="fa-brands fa-instagram"></i></div></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="copyright">
+          <div class="container border-top" style="width:1200px;height:89px;display:flex;justify-content:center;align-items:center;">
+            <div class="copy" style="font-size:12px;font-family:inter,sans-serif;color:#767676">Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.</div>
+            <div class="policies" style="margin-left:30px;display: flex;justify-content: center;align-items: center;">
+              <ul style="list-style:none;padding-top:15px;display:flex;">
+              <li style="margin-right:15px;font-size:12px;font-family:inter,sans-serif;color:#767676"><a href="" style="color:#767676">Privacy Policy</a></li>
+              <li style="margin-right:15px;font-size:12px;font-family:inter,sans-serif;color:#767676"><a href="" style="color:#767676">Terms & Conditions</a></li>
+              <li style="margin-right:15px;font-size:12px;font-family:inter,sans-serif;color:#767676"><a href="" style="color:#767676">Cookie</a></li> 
+            </ul>
+            <div class="pays"style="margin-left:10px;">
+              <a href=""><img src="../Img/payments.jpg" alt="" srcset=""></a>
+            </div>
+          </div>
+          </div>
+        </div>
+      
+      </footer>
+</body>
+
+<!-- Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Jquery Cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- My Js -->
+<script src="../Js/home.js"></script>
+</html>
