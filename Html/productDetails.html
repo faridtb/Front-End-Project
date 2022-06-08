@@ -467,24 +467,24 @@
      </div>
 </div>
     <div class="container" style="width:1200px;margin-top: 50px;border-radius: 5px;background-color: white;padding:0;">
-        <div class="headinga border-bottom" style="padding:0px 20px;display: flex;height: 64px;">
-            <a href="" style="color:black;font-size:16px;font-family:dosis,sans-serif;padding:20px;">DESCRIPTION</a>
-            <a href="" style="color:rgb(200, 200, 200);font-size:16px;font-family:dosis,sans-serif;padding:20px;">ADDITIONAL INFORMATION</a>
-            <a href="" style="color:rgb(188, 188, 188);font-size:16px;font-family:dosis,sans-serif;padding:20px;">REVIEWS (1)</a>
+        <div class="headinga border-bottom" style="padding:0px 20px;display: flex;height: 64px;font-weight: 600;">
+            <span class="topic" id="des" style="font-size:16px;font-family:dosis,sans-serif;padding:20px;cursor: pointer;" onclick="review('desc','des')">DESCRIPTION</span>
+            <span class="topic" id="info"style="font-size:16px;font-family:dosis,sans-serif;padding:20px;cursor: pointer;" onclick="review('add','info')">ADDITIONAL INFORMATION</span>
+            <span class="topic" id="rew" style="font-size:16px;font-family:dosis,sans-serif;padding:20px;cursor: pointer;" onclick="review('review','rew')">REVIEWS (1)</span>
         </div>
-        <!-- <div class="tab-desc" style="font-size: 16px;font-family:inter,sans-serif;padding:20px 40px;">
+        <div class="tab" id="desc" style="font-size: 16px;font-family:inter,sans-serif;padding:20px 40px;flex-direction: column;">
             <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
             <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
-        </div> -->
-        <!-- <div class="add-tab" style="font-size: 16px;font-family:inter,sans-serif;padding:20px 40px;display: flex;">
+        </div>
+        <div class="tab" id="add" style="font-size: 16px;font-family:inter,sans-serif;padding:20px 40px;display: flex;">
             <div class="col" style="border:1px solid rgb(232, 229, 229);">
                 <div class="brands" style="padding:8px;">Brands</div>
             </div>
             <div class="col" style="border:1px solid rgb(232, 229, 229);" >
                 <div class="brands" style="padding:8px;">Welch's</div>
             </div>
-        </div> -->
-        <div class="review-tab" style="font-size: 16px;font-family:dosis,sans-serif;padding:20px 40px;display: flex; flex-direction: column;">
+        </div>
+        <div class="tab" id="review" style="font-size: 16px;font-family:dosis,sans-serif;padding:20px 40px;display: flex; flex-direction: column;">
             <span style="margin-bottom:8px;">1 REVIEW FOR ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</span>
             <div class="prof-rew" style="display:flex;">
             <div class="profile" style="width:60px;height:60px;border-radius:50%;background-image:url(../Img/girl.jpeg)"></div>
