@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- My Css -->
+    <link rel="stylesheet" href="../Css/shop.css">
     <link rel="stylesheet" href="../Css/home.css">
+
      <!-- Swiper -->
     <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Shop</title>
@@ -382,9 +384,79 @@
                     <span style="color:black;">+</span>
                 </li>
             </ul>
-            
-            
-            
+            <div class="slidecontainer" style="padding-top:15px;width: 100%;">
+              <p style="padding-top:50px;font-size: 15px;font-family:dosis,sans-serif;">FILTER BY PRICE</p>
+              <div class="wrapper">
+                <div class="values" style="font-size:14px;font-family:inter,sans-serif;">
+                  <span style="color: rgb(123, 123, 123);">Price: <span style="color:black">$</span></span>
+                    <span id="range1">0</span>
+                    <span style="font-size:20px;letter-spacing: -4px;">--</span>
+                    <span style="color:black;margin-left: 5px;">$</span>
+                    <span id="range2">100</span>
+                </div>
+                <div class="container" style="padding:0 ;">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                    <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                </div>
+            </div>
+            </div>
+           
+            <p style="font-size: 15px;font-family:dosis,sans-serif;margin-top: 80px;">PRODUCT STATUS</p>
+            <ul style="padding: 0;margin:0;width: 100%;color: #767676;">
+                <li style="display: flex;align-items: center;justify-content: space-between;margin-bottom:10px;">
+                    <div class="check"  style="display: flex;align-items: center;">
+                    <input type="checkbox" style="margin-right:15px;">
+                    <span>In Stock</span>
+                    </div>
+                </li>
+                <li style="display: flex;align-items: center;justify-content: space-between;margin-bottom:10px;">
+                    <div class="check"  style="display: flex;align-items: center;">
+                    <input type="checkbox" style="margin-right:15px;">
+                    <span>On Sale</span>
+                    </div>
+                </li>
+            </ul>
+            <p style="font-size: 15px;font-family:dosis,sans-serif;margin-top:50px;">BRANDS</p>
+            <ul style="padding: 0;margin:0;width: 100%;color: #767676;">
+                <li style="display: flex;align-items: center;justify-content: space-between;margin-bottom:10px;">
+                    <div class="check"  style="display: flex;align-items: center;">
+                    <input type="checkbox" style="margin-right:15px;">
+                    <span>Frito Lay</span>
+                    </div>
+                    <span style="color:black;">(6)</span>
+                </li>
+                <li style="display: flex;align-items: center;justify-content: space-between;margin-bottom:10px;">
+                    <div class="check"  style="display: flex;align-items: center;">
+                    <input type="checkbox" style="margin-right:15px;">
+                    <span>Nespresso</span>
+                    </div>
+                    <span style="color:black;">(10)</span>
+                </li>
+                <li style="display: flex;align-items: center;justify-content: space-between;margin-bottom:10px;">
+                  <div class="check"  style="display: flex;align-items: center;">
+                  <input type="checkbox" style="margin-right:15px;">
+                  <span>Oreo</span>
+                  </div>
+                  <span style="color:black;">(6)</span>
+                </li>
+                <li style="display: flex;align-items: center;justify-content: space-between;margin-bottom:10px;">
+                  <div class="check"  style="display: flex;align-items: center;">
+                  <input type="checkbox" style="margin-right:15px;">
+                  <span>Quaker</span>
+                  </div>
+                  <span style="color:black;">(12)</span>
+                </li>
+                <li style="display: flex;align-items: center;justify-content: space-between;margin-bottom:10px;">
+                  <div class="check"  style="display: flex;align-items: center;">
+                  <input type="checkbox" style="margin-right:15px;">
+                  <span>Welch's</span>
+                  </div>
+                  <span style="color:black;">(23)</span>
+                </li>
+              </ul>
+
+              <div class="widget widget_media_image"><img width="1280" height="1750" src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/sidebar-banner.gif" class="image wp-image-1184  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;margin-top:50px;"></div>
             </div>
 
             <div class="col" style="display:flex;justify-content:start;align-items:flex-start;flex-direction:column;min-width:900px;height:1750px;padding:0px 15px 0px 30px;">
@@ -625,7 +697,15 @@
                             </div>  
                             <div class="addC" style="min-width:285px;max-width: 285px;bottom:-50px;"><div class="addCart">Add to card</div></div> 
                           </div>
-                        
+                          <div class="pagination" style="position: absolute;bottom:0px;left:550px;width:250px;height: 40px;display: flex;justify-content: center;align-items: center;">
+                            <div id="pagetest" style="margin-right:20px;color:#262626;min-width:36px;height:36px;background:#2bbef9;cursor:pointer;border-radius:50%;display: flex;justify-content: center;align-items: center;color:white">1</div>  
+                            <a href=""><div style="margin-right:30px;color:#262626">2</div></a>
+                            <a href=""><div style="margin-right:30px;color:#262626">3</div></a>
+                            <a href=""><div style="margin-right:30px;color:#262626">4</div></a>
+                            <a href=""><div style="margin-right:30px;color:#262626">5</div></a>
+                            <a href=""><div style="margin-right:30px;color:#262626">6</div></a>
+                            <a href=""><i class="fa-solid fa-chevron-right" style="margin-right:20px;color:#262626"></i></a>
+                           </div>
                         
                           
                           
@@ -822,5 +902,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Jquery Cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../Js/shop.js"></script>
 
 </html>
