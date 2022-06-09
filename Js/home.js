@@ -141,7 +141,7 @@ var swiper = new Swiper(".mySwiper", {
                 price:this.parentElement.previousElementSibling.lastElementChild.innerText,
                 imageUrl:this.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.firstElementChild.getAttribute("src"),
                 name:this.parentElement.parentElement.firstElementChild.innerText,
-                count:1
+                count:1,
             })
         }
         else{

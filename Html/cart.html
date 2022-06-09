@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="../Css/home.css">
      <!-- Swiper -->
     <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <style>
+      .table tbody tr td{
+        height:90px;
+        object-fit:cover;
+      }
+    </style>
     <title>Cart</title>
 </head>
 <body>
@@ -316,7 +322,10 @@
           </div>
         </div>
       </div>
-      <div class="container" style="width:1200px;padding: 0;">
+
+
+
+      <div class="container-1" style="width:1200px;padding: 0;display: none;">
         <div class="top" style="display:flex;justify-content:flex-start;align-items:center;padding:12px 0px;height:34px;font-size:12px;font-family: dosis,sans-serif;font-weight: 600;">HOME<i class="fa-solid fa-chevron-right"style="margin:0px 8px;font-size:8px;"></i><span style="color: rgb(142, 142, 142);">CART</span></div>
             <div class="empty" style="width: 100%;height:410px;display:flex;justify-content:center;align-items:center;flex-direction: column;">
                 <div class="image" style="width: 275px;height:275px;position: relative;"><img src="../Img/empty-removebg-preview.png" alt="" srcset="" style="width: 100%;height:100%;object-fit:cover;">
@@ -325,6 +334,38 @@
                 </div>
          </div>
     </div>
+
+    <div class="container" style="width:1200px; margin-top: 60px;">
+      <div class="row" style="width:1200px;position: relative;">
+        
+        <div class="col" style="display:flex;justify-content:start;align-items:start;flex-direction:column;min-width:900px;padding-right: 30px;">
+          <table class="table" style="width:100%;" id="mainTable">
+            <thead>
+              <tr style="font-size:14px;font-family:inter,sans-serif;color:#afb0b6;font-weight: 100;">
+                <th scope="col">img</th>
+                <th scope="col" style="width: 402px;padding: 8px;">Product</th>
+                <th scope="col" style="width:80px;padding: 8px;">Price</th>
+                <th scope="col" style="width:130px;padding: 8px;">Quantity</th>
+                <th scope="col" style="width:82px;padding: 8px;">Subtotal</th>
+                <th scope="col" style="width:30px;padding: 8px;"></th>
+              </tr>
+            </thead>
+            <tbody style="width: 100%;">
+              
+              </tbody>
+            </table>
+        </div>
+
+        <div class="col" style="display:flex;justify-content:start;align-items:flex-start;flex-direction:column;min-width:300px;padding-left: 15px;">
+        sagol
+        </div>
+
+      </div>
+    </div>
+
+
+  
+    
 
 
 
