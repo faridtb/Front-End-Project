@@ -30,3 +30,86 @@ function fillColor(){
     percent2 = (sliderTwo.value / sliderMaxValue) * 100;
     sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% ,  yellow ${percent1}% , red ${percent2}%, #dadae5 ${percent2}%)`;
 }
+
+let addCart=document.querySelectorAll(".addC");
+  let addToCart=document.querySelectorAll(".addToCart");
+  let productCount=document.querySelector(".counter");
+
+
+
+  if(localStorage.getItem("basket")==null){
+    localStorage.setItem("basket",JSON.stringify([]));
+  }
+
+  let arr=JSON.parse(localStorage.getItem("basket"));
+
+  CountProduct();
+
+  addCart.forEach(b=>{
+    b.addEventListener("click",function(ev){
+      if(localStorage.getItem("basket")==null){
+        localStorage.setItem("basket",JSON.stringify([]));
+      }
+      let arr=JSON.parse(localStorage.getItem("basket"));
+
+        ev.preventDefault();
+        let productId=this.parentElement.getAttribute("id");
+        let existProduct=arr.find(p=>p.id==productId);
+
+        if(existProduct==undefined){
+            arr.push({
+                id:productId,
+                price:this.previousElementSibling.lastElementChild.lastElementChild.innerText,
+                imageUrl:this.parentElement.firstElementChild.firstElementChild.getAttribute("src"),
+                name:this.previousElementSibling.firstElementChild.innerText,
+                count:1
+            })
+        }
+        else{
+          existProduct.count++;
+        }
+        localStorage.setItem("basket",JSON.stringify(arr));
+        CountProduct();
+    })
+
+  });
+
+
+  addToCart.forEach(b=>{
+    b.addEventListener("click",function(ev){
+
+      if(localStorage.getItem("basket")==null){
+        localStorage.setItem("basket",JSON.stringify([]));
+      }
+      let arr=JSON.parse(localStorage.getItem("basket"));
+
+        ev.preventDefault();
+        let productId=this.parentElement.parentElement.parentElement.getAttribute("id");
+        let existProduct=arr.find(p=>p.id==productId);
+
+        if(existProduct==undefined){
+            arr.push({
+                id:productId,
+                price:this.parentElement.previousElementSibling.lastElementChild.innerText,
+                imageUrl:this.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.firstElementChild.getAttribute("src"),
+                name:this.parentElement.parentElement.firstElementChild.innerText,
+                count:1
+            })
+        }
+        else{
+          existProduct.count++;
+        }
+        localStorage.setItem("basket",JSON.stringify(arr));
+        CountProduct();
+    })
+
+  });
+
+  function CountProduct(){
+    let arr=JSON.parse(localStorage.getItem("basket"));
+    let test=0;
+    for (const item of arr) {
+      test+=item.count;
+    }
+    productCount.innerText=test;
+  }
