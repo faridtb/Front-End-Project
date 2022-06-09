@@ -83,3 +83,7 @@
     color: #000000;
 }
 
+input:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
