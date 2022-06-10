@@ -34,6 +34,8 @@ function fillColor(){
 let addCart=document.querySelectorAll(".addC");
   let addToCart=document.querySelectorAll(".addToCart");
   let productCount=document.querySelector(".counter");
+  let notif=document.querySelector(".notification")
+
 
 
 
@@ -64,12 +66,28 @@ let addCart=document.querySelectorAll(".addC");
                 name:this.previousElementSibling.firstElementChild.innerText,
                 count:1
             })
+            notif.firstElementChild.innerText=`"`+this.previousElementSibling.firstElementChild.innerText+`"`+"has been added tou your cart";
+            notif.firstElementChild.nextElementSibling.innerText="";
+            
+
         }
         else{
           existProduct.count++;
+          notif.firstElementChild.innerText="Card Updated";
+          notif.firstElementChild.nextElementSibling.innerText=`${existProduct.count} x ${this.previousElementSibling.firstElementChild.innerText} has been added tou your cart`;
         }
         localStorage.setItem("basket",JSON.stringify(arr));
         CountProduct();
+
+        notif.style.opacity=1;
+        setTimeout(
+          function() {
+            notif.style.opacity=0;
+          }, 3000);
+
+          
+        
+       
     })
 
   });
@@ -93,14 +111,25 @@ let addCart=document.querySelectorAll(".addC");
                 price:this.parentElement.previousElementSibling.lastElementChild.innerText,
                 imageUrl:this.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.firstElementChild.getAttribute("src"),
                 name:this.parentElement.parentElement.firstElementChild.innerText,
-                count:1
+                count:1,
             })
+            notif.firstElementChild.innerText=`"`+this.parentElement.parentElement.firstElementChild.innerText+`"`+"has been added tou your cart";
+            notif.firstElementChild.nextElementSibling.innerText="";
         }
         else{
           existProduct.count++;
+          notif.firstElementChild.innerText="Card Updated";
+          notif.firstElementChild.nextElementSibling.innerText=`${existProduct.count} x ${this.parentElement.parentElement.firstElementChild.innerText} has been added tou your cart`;
         }
         localStorage.setItem("basket",JSON.stringify(arr));
         CountProduct();
+
+        notif.style.opacity=1;
+        setTimeout(
+          function() {
+            notif.style.opacity=0;
+          }, 3000);
+
     })
 
   });
@@ -113,3 +142,5 @@ let addCart=document.querySelectorAll(".addC");
     }
     productCount.innerText=test;
   }
+
+
