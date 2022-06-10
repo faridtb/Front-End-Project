@@ -81,24 +81,32 @@ if(localStorage.getItem("basket")==null){
 
       let counter=product.count;
       plus.addEventListener("click",function(){
+        let beforeTotal=product.count*money[1];
         counter++;
         tdCount.firstChild.innerText=counter;
         product.count++;
         localStorage.setItem("basket",JSON.stringify(arr));
         totalPrice=product.count*money[1];
+        let result=totalPrice-beforeTotal;
+        totally+=result;;
+        miniTotalPrice.innerText="$"+""+(totally).toFixed(2);
+        endPrice.innerText=(totally+(totally*18)/100).toFixed(2);
         tdTotal.innerText="$"+totalPrice.toFixed(2);
-        UpdateCart();
         CountProduct();
       })
       minus.addEventListener("click",function(){
         if(counter>1){
+          let beforeTotal=product.count*money[1];
           counter--;
           tdCount.firstChild.innerText=counter;
           product.count--;
           localStorage.setItem("basket",JSON.stringify(arr));
           totalPrice=product.count*money[1];
+          let result=beforeTotal-totalPrice;
+          totally-=result;;
+          miniTotalPrice.innerText="$"+""+(totally).toFixed(2);
+          endPrice.innerText=(totally+(totally*18)/100).toFixed(2);
           tdTotal.innerText="$"+totalPrice.toFixed(2);
-          UpdateCart();
           CountProduct();
         }
       })
@@ -117,22 +125,19 @@ if(localStorage.getItem("basket")==null){
 
       tdDel.addEventListener("click",function(){
         tdDel.parentElement.remove()
-        localStorage.removeItem(tdDel.parentElement);
+        localStorage.removeItem(this.parentElement);
+        arr=JSON.parse(localStorage.getItem("basket"));
         localStorage.setItem("basket",JSON.stringify(arr));
         console.log(arr);
         CountProduct();
-        UpdateCart();
       })
    
 
       tr.append(tdImage,tdName,tdPrice,tdCount,tdTotal,tdDel);
       table.lastElementChild.append(tr);
       tr.style.width="100%";
-      totally+=totalPrice;
-      miniTotalPrice.innerText="$"+""+totally.toFixed(2);
-      endPrice.innerText=(totally+(totally*18)/100).toFixed(2);
-      localStorage.setItem("basket",JSON.stringify(arr));
 
+      UpdateCart();
   });
 
 
