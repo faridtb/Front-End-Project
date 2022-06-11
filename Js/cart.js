@@ -95,9 +95,10 @@ if(localStorage.getItem("basket")==null){
         CountProduct();
       })
       minus.addEventListener("click",function(){
+
         if(counter>1){
-          let beforeTotal=product.count*money[1];
           counter--;
+          let beforeTotal=product.count*money[1];
           tdCount.firstChild.innerText=counter;
           product.count--;
           localStorage.setItem("basket",JSON.stringify(arr));
@@ -107,6 +108,13 @@ if(localStorage.getItem("basket")==null){
           miniTotalPrice.innerText="$"+""+(totally).toFixed(2);
           endPrice.innerText=(totally+(totally*18)/100).toFixed(2);
           tdTotal.innerText="$"+totalPrice.toFixed(2);
+          CountProduct();
+        }
+        else{
+          tdDel.parentElement.remove()
+          let index = arr.indexOf(product);
+          arr.splice(index,1)
+          localStorage.setItem("basket",JSON.stringify(arr));
           CountProduct();
         }
       })
@@ -125,10 +133,9 @@ if(localStorage.getItem("basket")==null){
 
       tdDel.addEventListener("click",function(){
         tdDel.parentElement.remove()
-        localStorage.removeItem(this.parentElement);
-        arr=JSON.parse(localStorage.getItem("basket"));
+        let index = arr.indexOf(product);
+        arr.splice(index,1)
         localStorage.setItem("basket",JSON.stringify(arr));
-        console.log(arr);
         CountProduct();
       })
    
@@ -136,7 +143,7 @@ if(localStorage.getItem("basket")==null){
       tr.append(tdImage,tdName,tdPrice,tdCount,tdTotal,tdDel);
       table.lastElementChild.append(tr);
       tr.style.width="100%";
-
+      CountProduct();
       UpdateCart();
   });
 
