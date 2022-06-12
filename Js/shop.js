@@ -68,8 +68,6 @@ let addCart=document.querySelectorAll(".addC");
             })
             notif.firstElementChild.innerText=`"`+this.previousElementSibling.firstElementChild.innerText+`"`+"has been added tou your cart";
             notif.firstElementChild.nextElementSibling.innerText="";
-            
-
         }
         else{
           existProduct.count++;
