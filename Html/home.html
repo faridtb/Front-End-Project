@@ -175,16 +175,36 @@ integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd
           <div class="count">
            <a href=""style="color:black"><span class="dollar">$<span class="amount">0.00</span></span></a>
            <div class="basketPop">
+            <div class="emptyBasket" style="display:flex;justify-content: center;align-items: center;flex-direction: column;">
              <img src="../Img/empty-removebg-preview.png"style="width:125px;height:100px;" alt="" srcset="">
              <span class="basketContent" style="font-size:14px;font-weight:600;">No product in the cart</span>
              <span class="sale" style="font-size:12px; padding-top:45px;"><hr> We reduce shipping prices to only 2.49$</span>
-           </div> 
-            <a href="cart.html"class="basketLogo" style="color:rgb(235, 52, 52);">
+            </div>
+             <div class="fullBasket" style="width:100%;padding:20px;overflow: hidden;">
+              <div class="table" style="width:100%;max-height:260px;overflow-y: scroll;overflow-x: hidden;  scrollbar-width: thin;" id="basketTable">
+                <table id="fullTable" style="border: #f1eeee;">
+                  
+                </table>
+              </div>
+              <hr style="color:#dcdcdc">
+              <div class="subtotal" style="display:flex;justify-content:space-between;align-items:center;padding:5px 10px;font-size: 17px;font-family: dosis,sans-serif;">
+              <span style="color:#989898">Subtotal:</span>
+              <span style="color:#C70707"><span>$</span><span id="totalBasket">65</span></span>
+              </div>
+              <button style="width:100%;height:44px;border:1px solid rgb(187, 186, 186);background-color: white;border-radius:5px;margin-bottom: 5px;"><a href="cart.html" style="color:rgb(127, 127, 127)">View Cart</a></button>
+              <button style="width:100%;height:44px;border:1px solid rgb(187, 186, 186);background-color: #C70707;border-radius:5px;margin-bottom: 5px;"><a href="cart.html" style="color:rgb(255, 255, 255)">Checkout</a></button>
+              <hr>
+              <span class="sale" style="font-size:12px;text-align: center;display: flex;flex-direction: column;align-items: center;justify-content: center;"> We reduce shipping prices to only 2.49$</span>
+            </div>
+            </div> 
+            <div class="basketlogo" style="height:70px;position:absolute;width:100px;">
+            <a href="cart.html"class="basketLogo" style="color:rgb(235, 52, 52);margin-left:45px;">
               <i class="fa-solid fa-basket-shopping"></i>
               <div class="counter">0</div>
             </a>
           </div>
         </div>
+      </div>
 
       </div>
     </div>
@@ -805,7 +825,8 @@ integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd
                 <div class="priceBefore"style="font-size:15px;font-weight:500;color:#D5D5D5;text-decoration: line-through;padding-top:8px;font-family:dosis,sans-serif;">$4.29</div>
                 <div class="priceAfter"style="font-size:17px;font-weight:600;color:#d51243;margin-left:15px;font-family:dosis,sans-serif;padding-top:3px;">$3.29</div>
                 </div>
-                <a href=""style="padding-top:5px;"><div class="addToCart" style="width:194px;height:34px;border-radius:15px;background-color: #ffcd00;color: black; font-size: 13px;display: flex;justify-content: center;align-items: center;font-weight:500;">Add to cart</div></a>
+                <a href=""style="padding-top:5px;">
+                  <div class="addToCart" style="width:194px;height:34px;border-radius:15px;background-color: #ffcd00;color: black; font-size: 13px;display: flex;justify-content: center;align-items: center;font-weight:500;">Add to cart</div></a>
               </div>
           </div>
           <div class="col"style="margin-left:0px;padding:0px;" id="55">

@@ -67,6 +67,10 @@ var swiper = new Swiper(".mySwiper", {
   let notif=document.querySelector(".notification");
   let minus=document.querySelectorAll(".minus");
   let plus=document.querySelectorAll(".plus");
+  let emptyBasket=document.querySelector(".emptyBasket");
+  let fullBasket=document.querySelector(".fullBasket");
+  let fullTable=document.getElementById("fullTable");
+  let totalPrice =document.getElementById("totalBasket");
 
 
 
@@ -78,6 +82,9 @@ var swiper = new Swiper(".mySwiper", {
   }
 
   let arr=JSON.parse(localStorage.getItem("basket"));
+
+
+
 
 
   function ButtonStyle(){
@@ -102,6 +109,32 @@ var swiper = new Swiper(".mySwiper", {
   CountProduct();
   ButtonStyle();
   PlusMinus();
+  BasketIn();
+  
+  function BasketIn(){
+    let arr=JSON.parse(localStorage.getItem("basket"));
+    fullTable.innerHTML="";
+    let total =0;
+    let counter=0;
+    for (const product of arr) {
+      fullTable.innerHTML+=`<td style="width:228px;height:80px;display: flex;padding: 10px 0px;margin-bottom:5px;">
+      <div class="image" style="width:64px;height:100%;padding: 4px;"><img src="${product.imageUrl}" alt="" srcset="" style="width:100%;height:100%;"></div>
+      <div class="content" style="width:192px;height:100%;margin-left: 10px;font-size: 13px;font-family: inter,sans-serif;">
+      <div class="namePro">${product.name}</div>
+      <div class="quantityPro" style="display:flex;justify-content:start;align-items: center;">
+      <div class="countPro">${product.count}</div>
+      <span style="margin-left: 5px;">x</span>
+      <div class="pricePro" style="color:#C70707;margin-left: 5px;">${product.price}</div>
+      </div>
+    </div>
+    </td>`
+    let money=product.price.split("$");
+    counter=product.count*money[1];
+    total+=counter;
+    totalPrice.innerText=total;
+    }
+  }
+  
   function PlusMinus(){
 
   plus.forEach(p=>{
@@ -111,6 +144,8 @@ var swiper = new Swiper(".mySwiper", {
       let productId=this.parentElement.parentElement.parentElement.getAttribute("id");
       let existProduct=arr.find(p=>p.id==productId);
       existProduct.count++;
+
+
       notif.style.opacity=1;
         setTimeout(
           function() {
@@ -121,6 +156,7 @@ var swiper = new Swiper(".mySwiper", {
         notif.firstElementChild.nextElementSibling.innerText=`${existProduct.count} x ${this.parentElement.parentElement.previousElementSibling.firstElementChild.innerText} has been added tou your cart`;
         localStorage.setItem("basket",JSON.stringify(arr));
         CountProduct();
+        BasketIn();
     })
   })
 
@@ -146,6 +182,7 @@ var swiper = new Swiper(".mySwiper", {
         this.parentElement.parentElement.lastElementChild.style.display="none";
         CountProduct();
       }
+      BasketIn();
         notif.style.opacity=1;
         setTimeout(
           function() {
@@ -156,6 +193,7 @@ var swiper = new Swiper(".mySwiper", {
         notif.firstElementChild.nextElementSibling.innerText=`${existProduct.count} x ${this.parentElement.parentElement.previousElementSibling.firstElementChild.innerText} has been changed tou your cart`;
       })
   })
+
 }
   
   addCart.forEach(b=>{
@@ -185,9 +223,9 @@ var swiper = new Swiper(".mySwiper", {
           else{
             PlusMinus();
           }
-        
         localStorage.setItem("basket",JSON.stringify(arr));
         CountProduct();
+        BasketIn();
 
         notif.style.opacity=1;
         setTimeout(
@@ -228,9 +266,10 @@ var swiper = new Swiper(".mySwiper", {
           notif.firstElementChild.innerText="Card Updated";
           notif.firstElementChild.nextElementSibling.innerText=`${existProduct.count} x ${this.parentElement.parentElement.firstElementChild.innerText} has been added tou your cart`;
         }
+        
         localStorage.setItem("basket",JSON.stringify(arr));
         CountProduct();
-
+        BasketIn();
         notif.style.opacity=1;
         setTimeout(
           function() {
@@ -248,6 +287,18 @@ var swiper = new Swiper(".mySwiper", {
       test+=item.count;
     }
     productCount.innerText=test;
+
+    if(arr.length>0)
+    {
+      emptyBasket.style.display="none"
+      fullBasket.style.display="block";
+    }
+    else
+    {
+      emptyBasket.style.display="flex"
+      fullBasket.style.display="none";
+    }
+  
   }
 
 

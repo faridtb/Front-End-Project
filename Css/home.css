@@ -228,7 +228,7 @@ color: rgb(52, 52, 52);
   -o-transition: opacity 0.2s ease-in-out;
   width: 300px;
   max-width: 350px;
-  max-height: 600px;
+  max-height: 550px;
   min-height: 250px;
   opacity: 1;
 }
