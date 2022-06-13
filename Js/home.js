@@ -131,7 +131,7 @@ var swiper = new Swiper(".mySwiper", {
     let money=product.price.split("$");
     counter=product.count*money[1];
     total+=counter;
-    totalPrice.innerText=total;
+    totalPrice.innerText=total.toFixed(2);
     }
   }
   

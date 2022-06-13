@@ -1,5 +1,14 @@
+let photos=document.querySelectorAll(".photo")
+let mainPhoto=document.querySelector(".mainPhoto")
 
 
+
+for (const photo of photos) {
+  imageUrl= mainPhoto.firstElementChild.getAttribute("src");
+  photo.addEventListener("click",function(){
+   imageUrl = photo.firstElementChild.getAttribute("src");
+  })
+}
 
 function review(topic,crTop) {
   var i;
@@ -17,7 +26,7 @@ function review(topic,crTop) {
 }
 
 
-let addCart=document.querySelectorAll(".addC");
+ let addCart=document.querySelectorAll(".addC");
   let addToCart=document.querySelectorAll(".addToCart");
   let productCount=document.querySelector(".counter");
   let notif=document.querySelector(".notification")
